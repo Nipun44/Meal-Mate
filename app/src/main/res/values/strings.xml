@@ -2,4 +2,13 @@
     <string name="app_name">Meal Mate</string>
     <string name="Reg1_Individual">Register as an Individual</string>
     <string name="Reg1_organization">Register as an Organization</string>
+    <string name="forget_password">forget_password</string>
+    <string name="forget_password2">Forget</string>
+    <string name="Password">Password</string>
+    <string name="reset_password">Provide Your accounts email for which you want to reset your password</string>
+    <string name="Email">Email</string>
+    <string name="makeSelection">Make</string>
+    <string name="makeselection">Make Selection</string>
+    <string name="contentdetails">Select which Contect Details should we used to select your password</string>
+    <string name="make">Make</string>
 </resources>
