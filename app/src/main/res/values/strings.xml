@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Meal Mate</string>
+    <string name="Reg1_Individual">Register as an Individual</string>
+    <string name="Reg1_organization">Register as an Organization</string>
 </resources>
