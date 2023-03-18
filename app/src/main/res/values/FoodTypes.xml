@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <Stirng_array name="food type" >
+        <item>Vegetable</item>
+        <item>Age </item>
+        <item>Fish</item>
+        <item>Chicken</item>
+        <item>Pork</item>
+        <item>Beef</item>
+    </Stirng_array>
+</resources>

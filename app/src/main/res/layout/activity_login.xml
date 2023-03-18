@@ -33,22 +33,22 @@ android:background="@color/primarybutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/signin"
+        android:layout_alignParentStart="true"
         android:layout_marginStart="10dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:hint="@string/username"
-        android:padding="28dp"
         android:background="@color/login_input"
         android:backgroundTint="#ffffff"
-
-
-        android:textColor="@color/white"
-        android:textColorHint="@color/black"
         android:drawableLeft="@drawable/baseline_person_24"
-        android:drawablePadding="20dp"
 
-        />
+
+        android:drawablePadding="20dp"
+        android:hint="@string/username"
+        android:padding="28dp"
+        android:textColor="@color/white"
+
+        android:textColorHint="@color/black" />
 
     <EditText
         android:id="@+id/password"
@@ -129,18 +129,6 @@ android:background="@color/primarybutton"
             />
 
     </LinearLayout>
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 </RelativeLayout>

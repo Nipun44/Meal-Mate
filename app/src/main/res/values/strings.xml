@@ -5,11 +5,11 @@
     <string name="forget_password">forget_password</string>
     <string name="forget_password2">Forget</string>
     <string name="Password">Password</string>
-    <string name="reset_password">Provide Your accounts email for which you want to reset your password</string>
+    <string name="reset_password">Provide Your accounts email for which you\nwant to reset your password</string>
     <string name="Email">Email</string>
     <string name="makeSelection">Make</string>
     <string name="makeselection">Make Selection</string>
-    <string name="contentdetails">Select which Contect Details should we used to select your password</string>
+    <string name="contentdetails">Select which Contect Details should we used to select\nyour password</string>
     <string name="make">Make</string>
     <string name="Type">Type</string>
     <string name="GIVE">GIVE</string>
@@ -37,4 +37,16 @@
     <string name="via_sms">Via SMS</string>
     <string name="via_mail">Via mail</string>
     <string name="exsample_gamil_com">exsample@gamil.com</string>
+
+    <string-array name="foodType">
+        <item></item>
+        <item>Vegetable</item>
+        <item>Chicken</item>
+        <item>Beef</item>
+        <item>Pork</item>
+    </string-array>
+    <!--    <string-array name="semesters">-->
+    <!--        <item>Semester 1</item>-->
+    <!--        <item>Semester 2</item>-->
+    <!--    </string-array>-->
 </resources>

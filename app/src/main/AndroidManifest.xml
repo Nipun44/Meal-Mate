@@ -12,6 +12,12 @@
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
+            android:name=".lilstDetails"
+            android:exported="false" />
+        <activity
+            android:name=".updateDetails"
+            android:exported="false" />
+        <activity
             android:name=".request"
             android:exported="false" />
         <activity
