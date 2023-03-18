@@ -60,7 +60,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/select_type"
         android:textColor="@color/black"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/give" />
 
@@ -71,7 +71,7 @@
 
         android:layout_marginTop="25dp"
         android:background="@android:drawable/btn_dropdown"
-        android:entries="@array/foodType"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/type" />
@@ -84,11 +84,12 @@
         android:layout_marginTop="20dp"
         android:text="@string/quantity"
         android:textColor="@color/black"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinner" />
 
     <EditText
+
         android:id="@+id/editTextTextPersonName"
         android:layout_width="331dp"
         android:layout_height="59dp"
@@ -97,7 +98,9 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
-        android:text="Enter quantity"
+        android:paddingRight="20dp"
+        android:text="@string/enter_quantity"
+        android:autofillHints="enter quantity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/quantity" />
@@ -111,7 +114,7 @@
         android:layout_marginTop="20dp"
         android:text="@string/description"
         android:textColor="@color/black"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.064"
         app:layout_constraintStart_toStartOf="parent"
@@ -126,7 +129,9 @@
         android:ems="10"
         android:inputType="textPersonName"
         android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:text="@string/enter_description"
+        android:autofillHints="enter description"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descriptionname" />
@@ -140,7 +145,7 @@
         android:layout_marginTop="20dp"
         android:onClick="onRadioButtonClicked"
         android:text="@string/as_an_anonymous"
-        android:textSize="25dp"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.106"
         app:layout_constraintStart_toStartOf="parent"

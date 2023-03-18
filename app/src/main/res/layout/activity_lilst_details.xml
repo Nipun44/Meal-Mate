@@ -24,7 +24,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:backgroundTint="@color/updatebtn"
-        android:text="Update"
+        android:text="@string/update4"
         app:layout_constraintEnd_toEndOf="@+id/imageView9"
         app:layout_constraintTop_toTopOf="@+id/textView18" />
 
@@ -34,7 +34,7 @@
         android:layout_height="42dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="Ekanayaka H.E.M.P.L"
+        android:text="@string/ekanayaka_h_e_m_p_l"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/button12"
         app:layout_constraintHorizontal_bias="0.233"
@@ -47,7 +47,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:text="Name:"
+        android:text="@string/name"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -71,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:backgroundTint="@color/updatebtn"
-        android:text="Update"
+        android:text="@string/update3"
         app:layout_constraintEnd_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/textView17" />
 
@@ -81,7 +81,7 @@
         android:layout_height="39dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
-        android:text="SLIIT Basement Canteen"
+        android:text="@string/sliit_basement_canteen"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/button10"
         app:layout_constraintHorizontal_bias="0.218"
@@ -94,7 +94,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:text="Description:"
+        android:text="@string/description2"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:text="Quantity:"
+        android:text="@string/quantityy"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -130,7 +130,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:backgroundTint="@color/updatebtn"
-        android:text="Update"
+        android:text="@string/update2"
         app:layout_constraintEnd_toEndOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="@+id/textView15" />
 
@@ -141,7 +141,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="104dp"
-        android:text="5"
+        android:text="@string/_5"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/button9"
         app:layout_constraintStart_toStartOf="@+id/imageView7"
@@ -153,7 +153,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
-        android:text="Type:"
+        android:text="@string/type"
         android:textColor="@color/black"
         android:textSize="25sp"
         android:textStyle="bold"
@@ -178,7 +178,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="104dp"
-        android:text="Chicken"
+        android:text="@string/chicken"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/button7"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
@@ -190,7 +190,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:backgroundTint="@color/updatebtn"
-        android:text="Update"
+        android:text="@string/update"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
         app:layout_constraintTop_toTopOf="@+id/textView13" />
 
@@ -199,7 +199,7 @@
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginEnd="88dp"
-        android:text="Save"
+        android:text="@string/save"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button14" />
 

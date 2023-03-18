@@ -36,17 +36,32 @@
     <string name="selection">SELECTION</string>
     <string name="via_sms">Via SMS</string>
     <string name="via_mail">Via mail</string>
-    <string name="exsample_gamil_com">exsample@gamil.com</string>
+    <string name="exsample_gmail_com">exsample@gamil.com</string>
+    <string name="type">Type:</string>
+    <string name="chicken">Chicken</string>
+    <string name="update">Update</string>
+    <string name="quantityy">Quantity:</string>
+    <string name="_5">5</string>
+    <string name="update2">Update</string>
+    <string name="description2">Description:</string>
+    <string name="sliit_basement_canteen">SLIIT Basement Canteen</string>
+    <string name="update3">Update</string>
+    <string name="name">Name:</string>
+    <string name="ekanayaka_h_e_m_p_l">Ekanayaka H.E.M.P.L</string>
+    <string name="update4">Update</string>
+    <string name="save">Save</string>
+    <string name="enter_quantity">Enter quantity</string>
+    <string name="xxxxxxxxxx">+XXXXXXXXXX</string>
+    <string name="_94xxxxxxxxx">+94XXXXXXXXX</string>
+    <string name="_94xxxxxxxxxx">+94XXXXXXXXX</string>
 
-    <string-array name="foodType">
+    <Stirng_array name="foodType" >
         <item></item>
         <item>Vegetable</item>
+        <item>Age </item>
+        <item>Fish</item>
         <item>Chicken</item>
-        <item>Beef</item>
         <item>Pork</item>
-    </string-array>
-    <!--    <string-array name="semesters">-->
-    <!--        <item>Semester 1</item>-->
-    <!--        <item>Semester 2</item>-->
-    <!--    </string-array>-->
+        <item>Beef</item>
+    </Stirng_array>
 </resources>
