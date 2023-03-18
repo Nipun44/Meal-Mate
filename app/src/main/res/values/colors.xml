@@ -9,5 +9,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="primarybutton">#F29010</color>
     <color name="emailbg">#F7BF8D</color>
+    <color name="textFld">#f8dac5</color>
+    <color name="cancel_btn">#f90909</color>
+    <color name="confirm_btn">#0c06fc</color>
+    <color name="login_input">#fbf9f7</color>
+
+
 
 </resources>

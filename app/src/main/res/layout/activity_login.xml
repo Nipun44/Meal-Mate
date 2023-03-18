@@ -22,7 +22,7 @@ android:background="@color/primarybutton"
 
 
         android:gravity="center"
-        android:text="Sign in"
+        android:text="@string/sign_in"
         android:textColor="@color/white"
         android:textSize="35dp"
         android:textStyle="bold" />
@@ -37,9 +37,9 @@ android:background="@color/primarybutton"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:hint="Username"
+        android:hint="@string/username"
         android:padding="28dp"
-        android:background="@drawable/roundedcorner"
+        android:background="@color/login_input"
         android:backgroundTint="#ffffff"
 
 
@@ -59,10 +59,10 @@ android:background="@color/primarybutton"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        android:background="@drawable/roundedcorner"
+        android:background="@color/login_input"
         android:drawableLeft="@drawable/baseline_info_24"
         android:drawablePadding="20dp"
-        android:hint="Password"
+        android:hint="@string/password"
         android:padding="28dp"
         android:textColor="@color/white"
         android:textColorHint="@color/black"
@@ -82,7 +82,7 @@ android:background="@color/primarybutton"
         android:layout_marginBottom="20dp"
 
         android:backgroundTint="@color/white"
-        android:text="LOGIN"
+        android:text="@string/login"
         android:textColor="#070707"
         app:cornerRadius="50dp" />
 
@@ -96,7 +96,7 @@ android:background="@color/primarybutton"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:text="Forgot password?"
+        android:text="@string/forgot_password"
         android:textColor="@color/white" />
 
     <TextView
@@ -104,7 +104,7 @@ android:background="@color/primarybutton"
         android:layout_height="wrap_content"
         android:id = "@+id/Others"
         android:layout_above="@id/socialIcons"
-        android:text="or sign in with"
+        android:text="@string/or_sign_in_with"
         android:layout_centerHorizontal="true"
         />
 
