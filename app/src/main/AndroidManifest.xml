@@ -12,6 +12,9 @@
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
+            android:name=".meal_dashboard"
+            android:exported="false" />
+        <activity
             android:name=".Register"
             android:exported="false" />
         <activity
