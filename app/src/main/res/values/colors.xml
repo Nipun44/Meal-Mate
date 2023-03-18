@@ -8,4 +8,15 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="primarybutton">#FFA000</color>
+    <color name="secondary_color_btn">#757575</color>
+    <color name="disabled_button_color">#BDBDBD</color>
+    <color name="heading_text_color">#212121</color>
+    <color name="body_text_color">#424242</color>
+    <color name="accent_text_color">#FFA000</color>
+    <color name="primary_background_color">#F5F5F5</color>
+    <color name="secondary_background_color">#FFFFFF</color>
+    <color name="border_color">#E0E0E0</color>
+
+
+
 </resources>

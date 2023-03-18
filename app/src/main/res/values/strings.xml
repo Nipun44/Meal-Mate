@@ -2,4 +2,11 @@
     <string name="app_name">Meal Mate</string>
     <string name="Reg1_Individual">Register as an Individual</string>
     <string name="Reg1_organization">Register as an Organization</string>
+    <string name="item_details">Item Details</string>
+    <string name="lahiru_jayawardhane">Lahiru Jayawardhane</string>
+    <string name="rice_and_curry">Rice and Curry</string>
+    <string name="_1_pack">1 pack</string>
+    <string name="i_m_in_basement_canteen_i_have_extra_rice_and_curry_pack_anyone_need_that_come_to_basement">I\'m in basement canteen, I have extra rice and curry pack, anyone need that come to basement</string>
+    <string name="request">Request</string>
+    <string name="cancel">cancel</string>
 </resources>
