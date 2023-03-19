@@ -2,6 +2,7 @@
     <string name="app_name">Meal Mate</string>
     <string name="Reg1_Individual">Register as an Individual</string>
     <string name="Reg1_organization">Register as an Organization</string>
+
     <string name="location_name_dashboard">Location</string>
     <string name="vegi_meal_per">Vegi 40% </string>
     <string name="non_vegi_per">Non vegi 60%</string>
@@ -9,4 +10,13 @@
     <string name="Name_of_donater_dashboard" >Ashan</string>
     <string name="qty_dashboard">quantity - 2</string>
     <string name="Desciption_dashboard">Vegetarian food</string>
+
+    <string name="item_details">Item Details</string>
+    <string name="lahiru_jayawardhane">Lahiru Jayawardhane</string>
+    <string name="rice_and_curry">Rice and Curry</string>
+    <string name="_1_pack">1 pack</string>
+    <string name="i_m_in_basement_canteen_i_have_extra_rice_and_curry_pack_anyone_need_that_come_to_basement">I\'m in basement canteen, I have extra rice and curry pack, anyone need that come to basement</string>
+    <string name="request">Request</string>
+    <string name="cancel">cancel</string>
+
 </resources>
