@@ -5,6 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <ImageView
+        android:id="@+id/imageView27"
+        android:layout_width="76dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="648dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_home_24" />
+
     <LinearLayout
         android:layout_width="414dp"
         android:layout_height="625dp"
@@ -22,15 +32,17 @@
             android:layout_height="40dp"
             android:text="@string/item_details"
             android:textAlignment="center"
-            android:textColor="@color/heading_text_color"
-            android:textSize="30sp" />
+            android:textColor="@color/secondary"
+            android:textSize="@dimen/topic"
+            android:textStyle="bold" />
+
         <TextView
             android:id="@+id/giver_type"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="70dp"
             android:text="@string/lahiru_jayawardhane"
-            android:textColor="@color/secondary_color_btn"
+            android:textColor="@color/primarybutton"
             android:textSize="25sp"
             app:drawableLeftCompat="@drawable/baseline_person_24" />
 

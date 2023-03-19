@@ -11,22 +11,32 @@
     tools:context=".request">
 
 
+    <ImageView
+        android:id="@+id/imageView28"
+        android:layout_width="76dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="648dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_home_24" />
+
+
     <TextView
         android:id="@+id/contact"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="52dp"
+        android:padding="20sp"
         android:paddingLeft="20sp"
         android:paddingRight="20sp"
-        android:padding="20sp"
         android:text="@string/contact"
-        android:textColor="@color/black"
+        android:textColor="@color/login_input"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
     <ImageView
         android:id="@+id/imageView4"
@@ -44,8 +54,9 @@
         android:layout_height="51dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="48dp"
-        android:backgroundTint="@color/cancel_btn"
-        android:text="@string/cansel"
+        android:background="@drawable/custom_button"
+        android:padding="10dp"
+        android:text="@string/cancel"
         app:layout_constraintStart_toEndOf="@+id/button3"
         app:layout_constraintTop_toBottomOf="@+id/textView7" />
 
@@ -110,7 +121,8 @@
         android:layout_height="51dp"
         android:layout_marginStart="48dp"
         android:layout_marginTop="36dp"
-        android:backgroundTint="@color/confirm_btn"
+        android:background="@drawable/button"
+        android:padding="10dp"
         android:text="@string/confirm2"
         app:layout_constraintBottom_toBottomOf="@+id/imageView4"
         app:layout_constraintStart_toStartOf="@+id/imageView4"

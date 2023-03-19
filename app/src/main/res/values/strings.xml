@@ -89,7 +89,7 @@
     <string name="nic_reg">NIC</string>
 
 
-    <string name="item_details">Item Details</string>
+    <string name="item_details">Meal Details</string>
     <string name="lahiru_jayawardhane">Lahiru Jayawardhane</string>
     <string name="rice_and_curry">Rice and Curry</string>
     <string name="_1_pack">1 pack</string>
@@ -130,7 +130,8 @@
     <string name="reg_as_in">Register as an Individual</string>
     <string name="your_name_org_reg">Enter your name</string>
     <string name="reg_org_name">Name of the Organization</string>
-
+    <string name="addpalce_topic">Add Place</string>
+    <string name="signup_dont_haveacc">Don\'t have an account</string>
 
 
 </resources>

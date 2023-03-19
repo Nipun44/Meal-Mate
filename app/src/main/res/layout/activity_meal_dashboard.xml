@@ -7,6 +7,16 @@
     android:background="#FFFFFF">
 
 
+    <ImageView
+        android:id="@+id/imageView26"
+        android:layout_width="76dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="648dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_home_24" />
+
     <TextView
         android:id="@+id/app_name_textview"
         android:layout_width="385dp"
