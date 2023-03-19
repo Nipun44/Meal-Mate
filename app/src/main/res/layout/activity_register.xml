@@ -4,42 +4,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primarybutton"
     tools:context=".Register">
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="206dp"
-        android:layout_height="290dp"
-        android:layout_marginStart="100dp"
-        android:layout_marginTop="56dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="81dp"
+        android:layout_marginTop="42dp"
         android:background="@drawable/button"
         android:shadowColor="#221F1F"
         android:text="@string/Reg1_Individual"
-        app:backgroundTint="@color/primarybutton"
+        android:textColor="@color/primarybutton"
+        android:textStyle="bold"
+        app:backgroundTint="@color/white"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="278dp"
+        android:layout_height="57dp"
         android:layout_marginStart="66dp"
         android:layout_marginTop="16dp"
-        android:background="@drawable/button"
         android:backgroundTint="@color/primarybutton"
         android:text="@string/Reg1_organization"
+        android:textAlignment="center"
+        app:backgroundTint="@color/primarybutton"
+        app:cornerRadius="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
-        app:backgroundTint="@color/primarybutton" />
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="1dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="369dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_bnw" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
