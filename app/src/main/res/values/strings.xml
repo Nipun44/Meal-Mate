@@ -109,6 +109,8 @@
     <string name="Reg1_topic">Welcome to Meal Mate</string>
     <string name="reg_phonenum">Mobile Number</string>
     <string name="reg_already_login">Login</string>
+    <string name="login_loginbutton">Login</string>
+    <string name="Reg_org">Register as an Organization</string>
 
 
 </resources>

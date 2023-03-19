@@ -97,9 +97,26 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="26dp"
         android:layout_marginTop="11dp"
-        android:background="@drawable/roundedcorner"
+        android:background="@drawable/custom_button"
+        android:padding="10dp"
         android:text="@string/reg_already_login"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/login_input"
+        android:textSize="20sp"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="326dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button"
+        android:text="@string/Reg_org"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
