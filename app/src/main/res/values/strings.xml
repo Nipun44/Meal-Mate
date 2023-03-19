@@ -9,4 +9,15 @@
     <string name="i_m_in_basement_canteen_i_have_extra_rice_and_curry_pack_anyone_need_that_come_to_basement">I\'m in basement canteen, I have extra rice and curry pack, anyone need that come to basement</string>
     <string name="request">Request</string>
     <string name="cancel">cancel</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="contact_us_name">  Name</string>
+    <string name="contact_us_email"> Email</string>
+    <string name="contact_us_subject">  Subject </string>
+    <string name="contact_us_discription">  Description</string>
+    <string name="contact_us_submit" >  Submit</string>
+    <string name="Contact_us_hotline">Hotline</string>
+    <string name="contact_email">Email</string>
+    <string name="ourEmail">Example@gmail.com</string>
+
+
 </resources>
