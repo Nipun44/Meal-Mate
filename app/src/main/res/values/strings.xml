@@ -3,6 +3,70 @@
     <string name="Reg1_Individual">Register as an Individual</string>
     <string name="Reg1_organization">Register as an Organization</string>
 
+    <string name="forget_password">forget_password</string>
+    <string name="forget_password2">Forget</string>
+    <string name="Password">Password</string>
+    <string name="reset_password">Provide Your accounts email for which you\nwant to reset your password</string>
+    <string name="Email">Email</string>
+    <string name="makeSelection">Make</string>
+    <string name="makeselection">Make Selection</string>
+    <string name="contentdetails">Select which Contect Details should we used to select\nyour password</string>
+    <string name="make">Make</string>
+    <string name="Type">Type</string>
+    <string name="GIVE">GIVE</string>
+    <string name="sign_in">Sign in</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="or_sign_in_with">or sign in with</string>
+    <string name="give">GIVE</string>
+    <string name="select_type">Select Type:</string>
+    <string name="quantity">Quantity:</string>
+    <string name="description">Description:</string>
+    <string name="enter_description">Enter description</string>
+    <string name="as_an_anonymous">As an anonymous</string>
+    <string name="confirm">Confirm</string>
+    <string name="back">BACK</string>
+    <string name="contact">CONTACT</string>
+    <string name="number">Number</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="confirm2">Confirm</string>
+    <string name="cansel">Cansel</string>
+    <string name="make1">MAKE</string>
+    <string name="selection">SELECTION</string>
+    <string name="via_sms">Via SMS</string>
+    <string name="via_mail">Via mail</string>
+    <string name="exsample_gmail_com">exsample@gamil.com</string>
+    <string name="type">Type:</string>
+    <string name="chicken">Chicken</string>
+    <string name="update">Update</string>
+    <string name="quantityy">Quantity:</string>
+    <string name="_5">5</string>
+    <string name="update2">Update</string>
+    <string name="description2">Description:</string>
+    <string name="sliit_basement_canteen">SLIIT Basement Canteen</string>
+    <string name="update3">Update</string>
+    <string name="name">Name:</string>
+    <string name="ekanayaka_h_e_m_p_l">Ekanayaka H.E.M.P.L</string>
+    <string name="update4">Update</string>
+    <string name="save">Save</string>
+    <string name="enter_quantity">Enter quantity</string>
+    <string name="xxxxxxxxxx">+XXXXXXXXXX</string>
+    <string name="_94xxxxxxxxx">+94XXXXXXXXX</string>
+    <string name="_94xxxxxxxxxx">+94XXXXXXXXX</string>
+
+    <Stirng_array name="foodType" >
+        <item></item>
+        <item>Vegetable</item>
+        <item>Age </item>
+        <item>Fish</item>
+        <item>Chicken</item>
+        <item>Pork</item>
+        <item>Beef</item>
+    </Stirng_array>
+
+
     <string name="location_name_dashboard">Location</string>
     <string name="vegi_meal_per">Vegi 40% </string>
     <string name="non_vegi_per">Non vegi 60%</string>
@@ -24,6 +88,7 @@
     <string name="i_m_in_basement_canteen_i_have_extra_rice_and_curry_pack_anyone_need_that_come_to_basement">I\'m in basement canteen, I have extra rice and curry pack, anyone need that come to basement</string>
     <string name="request">Request</string>
     <string name="cancel">cancel</string>
+
 
 
 </resources>

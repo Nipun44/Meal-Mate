@@ -12,10 +12,38 @@
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
+
+            android:name=".lilstDetails"
+            android:exported="false" />
+        <activity
+            android:name=".updateDetails"
+            android:exported="false" />
+        <activity
+            android:name=".request"
+            android:exported="false" />
+        <activity
+            android:name=".givePartfood"
+            android:exported="false" />
+        <activity
+            android:name=".givePart"
+            android:exported="false" />
+        <activity
+            android:name=".forgetPassword3"
+            android:exported="false" />
+        <activity
+            android:name=".forgetpassword2"
+            android:exported="false" />
+        <activity
+            android:name=".forget_password"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+
             android:name=".Register2"
             android:exported="false" />
         <activity
             android:name=".meal_dashboard"
+
             android:exported="false" />
         <activity
             android:name=".Register"
