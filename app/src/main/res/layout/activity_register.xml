@@ -7,66 +7,46 @@
     android:background="@color/primarybutton"
     tools:context=".Register">
 
-
     <Button
         android:id="@+id/button"
-        android:layout_width="278dp"
-        android:layout_height="66dp"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="69dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="42dp"
         android:background="@drawable/button"
         android:shadowColor="#221F1F"
         android:text="@string/Reg1_Individual"
         android:textColor="@color/primarybutton"
         android:textStyle="bold"
         app:backgroundTint="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
+
     <Button
         android:id="@+id/button2"
-        android:layout_width="274dp"
-        android:layout_height="60dp"
-        android:layout_marginStart="68dp"
-        android:layout_marginTop="12dp"
-        android:background="@drawable/button"
-        android:backgroundTint="@color/accent_text_color"
+        android:layout_width="278dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@color/primarybutton"
         android:text="@string/Reg1_organization"
         android:textAlignment="center"
-
-        android:textColor="@color/login_input"
-        android:textStyle="bold"
+        app:backgroundTint="@color/primarybutton"
         app:cornerRadius="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
         app:strokeColor="#FFFFFF"
-        app:strokeWidth="10dp" />
+        app:strokeWidth="1dp" />
 
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="250dp"
         android:layout_height="369dp"
         android:layout_marginStart="80dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_bnw" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="408dp"
-        android:layout_height="89dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="104dp"
-        android:text="@string/Reg1_topic"
-        android:textAlignment="center"
-        android:textColor="@color/primary_background_color"
-        android:textSize="36dp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

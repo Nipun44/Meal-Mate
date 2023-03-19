@@ -38,11 +38,11 @@
 
     <TextView
         android:id="@+id/give"
-        android:layout_width="79dp"
-        android:layout_height="43dp"
+        android:layout_width="255dp"
+        android:layout_height="54dp"
 
         android:layout_marginTop="45dp"
-        android:text="@string/give"
+        android:text="@string/i_have_extras"
 
         android:textAlignment="center"
         android:textColor="@color/white"
