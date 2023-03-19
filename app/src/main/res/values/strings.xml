@@ -106,9 +106,11 @@
     <string name="Contact_us_hotline">Hotline</string>
     <string name="contact_email">Email</string>
     <string name="ourEmail">Example@gmail.com</string>
-
-
-
+    <string name="Reg1_topic">Welcome to Meal Mate</string>
+    <string name="reg_phonenum">Mobile Number</string>
+    <string name="reg_already_login">Login</string>
+    <string name="login_loginbutton">Login</string>
+    <string name="Reg_org">Register as an Organization</string>
 
 
 </resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primarybutton"
+    tools:context=".Register">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="267dp"
+        android:layout_height="61dp"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="44dp"
+        android:background="@drawable/button"
+        android:shadowColor="#221F1F"
+        android:text="@string/Reg1_Individual"
+        android:textColor="@color/primarybutton"
+        android:textStyle="bold"
+        app:backgroundTint="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="278dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/primarybutton"
+        android:text="@string/Reg1_organization"
+        android:textAlignment="center"
+        android:textColor="@color/login_input"
+        app:backgroundTint="@color/primarybutton"
+        app:cornerRadius="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        app:strokeColor="#FFFFFF"
+        app:strokeWidth="1dp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="369dp"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_bnw" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

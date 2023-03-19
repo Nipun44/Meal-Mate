@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/secondary"
-    android:backgroundTint="@color/primarybutton"
+    android:backgroundTint="@color/accent_text_color"
     tools:context=".Register2">
 
     <TextView
@@ -62,6 +62,21 @@
         android:ems="10"
         android:hint="Enter your name"
         android:inputType="textPersonName"
+        android:text="@string/reg_phonenum"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="304dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="248dp"
+        android:background="@drawable/sbutton"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
         android:text="@string/nic_reg"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
@@ -75,5 +90,33 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_bnw" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/custom_button"
+        android:padding="10dp"
+        android:text="@string/reg_already_login"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/login_input"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/switch2"
+        android:layout_width="326dp"
+        android:layout_height="95dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/button"
+        android:text="@string/Reg_org"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
