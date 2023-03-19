@@ -18,7 +18,7 @@
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></RelativeLayout>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/contact_us_text"
@@ -40,26 +40,25 @@
         android:id="@+id/contact_name"
         android:layout_width="340dp"
         android:layout_height="50dp"
-        android:layout_marginStart="37dp"
+        android:layout_marginStart="34dp"
         android:layout_marginTop="48dp"
         android:layout_marginEnd="37dp"
-        android:background="#ffffff"
+        android:background="@drawable/roundedges"
         android:ems="10"
         android:hint="@string/contact_us_name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contact_us_text" />
 
     <EditText
+        android:background="@drawable/roundedges"
         android:id="@+id/contact_email"
         android:layout_width="340dp"
         android:layout_height="50dp"
         android:layout_marginStart="37dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="37dp"
-        android:background="#ffffff"
         android:ems="10"
         android:hint=" Email"
         android:inputType="textEmailAddress"
@@ -69,13 +68,13 @@
         app:layout_constraintTop_toBottomOf="@+id/contact_name" />
 
     <EditText
+        android:background="@drawable/roundedges"
         android:id="@+id/contact_subject"
         android:layout_width="340sp"
         android:layout_height="50sp"
         android:layout_marginStart="37dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="34dp"
-        android:background="#ffffff"
         android:ems="10"
         android:hint="@string/contact_us_subject"
         android:inputType="textPersonName"
@@ -89,23 +88,12 @@
         android:layout_height="82dp"
         android:layout_marginStart="37dp"
         android:layout_marginTop="33dp"
-        android:background="#ffffff"
+        android:background="@drawable/roundedges"
         android:ems="10"
         android:hint="@string/contact_us_discription"
         android:inputType="textPersonName"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/contact_subject" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="161dp"
-        android:layout_marginTop="31dp"
-        android:text="@string/contact_us_submit"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/contact_discription"
-   />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="409dp"
@@ -113,13 +101,14 @@
         android:layout_marginStart="1dp"
         android:layout_marginTop="2dp"
         android:layout_marginEnd="1dp"
-        android:background="#FBAB3F"
+        android:background="@drawable/roundedges"
+        android:backgroundTint="#FBB041"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="0.0">
+        app:layout_constraintVertical_bias="1.0">
 
         <TextView
             android:id="@+id/hotline"
@@ -138,13 +127,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="28dp"
+            android:autoLink="phone"
+            android:linksClickable="true"
             android:text="011-XXXXXXX"
             android:textColor="#000000"
             android:textSize="20sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/hotline"
-            android:linksClickable="true"
-            android:autoLink="phone"/>
+            app:layout_constraintTop_toBottomOf="@+id/hotline" />
 
         <TextView
             android:id="@+id/email"
@@ -167,6 +156,17 @@
             android:textColor="#000000"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/email" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:backgroundTint="#4CAF50"
+        android:text="@string/contact_us_submit"
+        tools:layout_editor_absoluteX="155dp"
+        tools:layout_editor_absoluteY="489dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
