@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primarybutton"
+    tools:context=".AboutUs">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/terms_of_service"
+        android:textColor="#616161"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07999998" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="370dp"
+        android:layout_height="537dp"
+        android:background="@drawable/about_us_border"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        tools:ignore="TextSizeCheck">
+
+
+        <TextView
+            android:id="@+id/introduction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/introduction"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/introduction_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_to_meal_mate_a_mobile_application_that_connects_people_who_have_extra_food_with_volunteers_who_are_interested_in_taking_the_food_these_terms_and_conditions_terms_govern_your_access_to_and_use_of_the_meal_mate_app_and_its_services_by_using_the_app_you_agree_to_be_bound_by_these_terms_if_you_do_not_agree_with_any_of_these_terms_you_may_not_use_the_app"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/eligibility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/eligibility"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/eligibility_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/the_meal_mate_app_is_available_to_anyone_who_has_access_to_it_by_using_the_app_you_represent_and_warrant_that_you_have_the_legal_capacity_to_enter_into_these_terms"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/Food_Sharing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/food_sharing"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/Food_Sharing_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/the_meal_mate_app_is_designed_to_facilitate_the_sharing_of_extra_food_between_individuals_the_app_does_not_guarantee_the_quality_or_safety_of_the_food_shared_through_the_app_and_users_assume_all_risks_associated_with_sharing_and_consuming_food_through_the_app"
+            android:textSize="15sp"
+            />
+        <TextView
+            android:layout_marginTop="3dp"
+            android:id="@+id/User_Content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/user_content"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/User_Content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/you_are_solely_responsible_for_any_content_that_you_post_upload_or_otherwise_make_available_through_the_meal_mate_app_user_content_you_represent_and_warrant_that_your_user_content_does_not_infringe_any_third_party_rights_including_intellectual_property_rights_and_privacy_rights"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
