@@ -89,6 +89,18 @@
     <string name="request">Request</string>
     <string name="cancel">cancel</string>
 
+    <string name="contact_us">Contact Us</string>
+    <string name="contact_us_name">  Name</string>
+    <string name="contact_us_email"> Email</string>
+    <string name="contact_us_subject">  Subject </string>
+    <string name="contact_us_discription">  Description</string>
+    <string name="contact_us_submit">  Submit</string>
+    <string name="Contact_us_hotline">Hotline</string>
+    <string name="contact_email">Email</string>
+    <string name="ourEmail">Example@gmail.com</string>
+
+
+
 
 
 </resources>
