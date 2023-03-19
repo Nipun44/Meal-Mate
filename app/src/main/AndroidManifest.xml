@@ -12,12 +12,16 @@
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
-            android:name=".password04"
+
+            android:name=".Profile"
             android:exported="false" />
         <activity
-            android:name=".Password03"
+            android:name=".Contact_us"
             android:exported="false" />
         <activity
+            android:name=".ContactUs"
+
+
             android:name=".lilstDetails"
             android:exported="false" />
         <activity
@@ -43,6 +47,13 @@
             android:exported="false" />
         <activity
             android:name=".login"
+
+            android:name=".Register2"
+            android:exported="false" />
+        <activity
+            android:name=".meal_dashboard"
+
+
             android:exported="false" />
         <activity
             android:name=".Register"
