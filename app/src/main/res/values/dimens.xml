@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="topic">34dp</dimen>
+    <dimen name="text_normal">20dp</dimen>
+    <dimen name="btn_text">14dp</dimen>
+    <dimen name="large_topic">38dp</dimen>
+</resources>

@@ -9,12 +9,27 @@
     tools:context=".reg3_org">
 
 
+    <EditText
+        android:id="@+id/editTextTextPersonName2"
+        android:layout_width="304dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/sbutton"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:text="@string/reg_email"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="144dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginTop="124dp"
         android:text="@string/Register"
         android:textAlignment="center"
         android:textColor="@color/white"
@@ -27,8 +42,8 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="304dp"
         android:layout_height="56dp"
-        android:layout_marginStart="53dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/sbutton"
         android:ems="10"
         android:hint="@string/reg_org_name"
@@ -39,41 +54,11 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="304dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="92dp"
-        android:background="@drawable/sbutton"
-        android:ems="10"
-        android:hint="Enter your name"
-        android:inputType="textPersonName"
-        android:text="@string/reg_email"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName3"
-        android:layout_width="304dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="172dp"
-        android:background="@drawable/sbutton"
-        android:ems="10"
-        android:hint="Enter your name"
-        android:inputType="textPersonName"
-        android:text="@string/reg_phonenum"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <EditText
         android:id="@+id/editTextTextPersonName4"
         android:layout_width="304dp"
         android:layout_height="56dp"
         android:layout_marginStart="52dp"
-        android:layout_marginTop="248dp"
+        android:layout_marginTop="256dp"
         android:background="@drawable/sbutton"
         android:ems="10"
         android:hint="@string/your_name_org_reg"
@@ -87,7 +72,8 @@
         android:id="@+id/imageView"
         android:layout_width="133dp"
         android:layout_height="92dp"
-        android:layout_marginStart="139dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_bnw" />
@@ -96,8 +82,8 @@
         android:id="@+id/button8"
         android:layout_width="106dp"
         android:layout_height="53dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="33dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="44dp"
         android:background="@drawable/custom_button"
         android:padding="10dp"
         android:text="@string/reg_already_login"
@@ -107,6 +93,21 @@
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="304dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="180dp"
+        android:background="@drawable/sbutton"
+        android:ems="10"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:text="@string/reg_phonenum"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Switch
         android:id="@+id/switch2"

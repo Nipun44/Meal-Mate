@@ -4,27 +4,40 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".lilstDetails"
-    android:background="@color/primarybutton"
-    >
+    android:background="@color/login_input"
+    tools:context=".lilstDetails">
+
+    <ImageView
+        android:id="@+id/imageView25"
+        android:layout_width="76dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="648dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/baseline_home_24" />
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="389dp"
-        android:layout_height="79dp"
+        android:layout_width="380dp"
+        android:layout_height="81dp"
         android:layout_marginTop="15dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/type4"
-        app:srcCompat="@drawable/square2" />
+        app:srcCompat="@drawable/sbutton" />
 
     <Button
         android:id="@+id/button12"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/updatebtn"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="@color/secondary"
+        android:padding="10dp"
         android:text="@string/update4"
+        android:textColor="@color/login_input"
         app:layout_constraintEnd_toEndOf="@+id/imageView9"
         app:layout_constraintTop_toTopOf="@+id/textView18" />
 
@@ -35,6 +48,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="@string/ekanayaka_h_e_m_p_l"
+        android:textColor="@color/login_input"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/button12"
         app:layout_constraintHorizontal_bias="0.233"
@@ -48,7 +62,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:text="@string/name"
-        android:textColor="@color/black"
+        android:textColor="@color/secondary"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,22 +70,25 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="389dp"
+        android:layout_width="380dp"
         android:layout_height="79dp"
-        android:layout_marginTop="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.727"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
         app:layout_constraintTop_toBottomOf="@+id/type3"
-        app:srcCompat="@drawable/square2" />
+        app:srcCompat="@drawable/sbutton" />
 
     <Button
         android:id="@+id/button10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/updatebtn"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="@color/secondary"
+        android:padding="10dp"
         android:text="@string/update3"
+        android:textColor="@color/login_input"
         app:layout_constraintEnd_toEndOf="@+id/imageView8"
         app:layout_constraintTop_toTopOf="@+id/textView17" />
 
@@ -82,6 +99,7 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="20dp"
         android:text="@string/sliit_basement_canteen"
+        android:textColor="@color/login_input"
         android:textSize="20sp"
         app:layout_constraintEnd_toStartOf="@+id/button10"
         app:layout_constraintHorizontal_bias="0.218"
@@ -95,7 +113,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:text="@string/description2"
-        android:textColor="@color/black"
+        android:textColor="@color/secondary"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -108,7 +126,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:text="@string/quantityy"
-        android:textColor="@color/black"
+        android:textColor="@color/secondary"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -116,21 +134,25 @@
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="389dp"
-        android:layout_height="79dp"
+        android:layout_width="380dp"
+        android:layout_height="82dp"
         android:layout_marginTop="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView8"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView8"
         app:layout_constraintTop_toBottomOf="@+id/type2"
-        app:srcCompat="@drawable/square2" />
+        app:srcCompat="@drawable/sbutton" />
 
     <Button
         android:id="@+id/button9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/updatebtn"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="@color/secondary"
+        android:padding="10dp"
         android:text="@string/update2"
+        android:textColor="@color/login_input"
         app:layout_constraintEnd_toEndOf="@+id/imageView7"
         app:layout_constraintTop_toTopOf="@+id/textView15" />
 
@@ -142,6 +164,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="104dp"
         android:text="@string/_5"
+        android:textColor="@color/login_input"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/button9"
         app:layout_constraintStart_toStartOf="@+id/imageView7"
@@ -154,7 +177,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:text="@string/type"
-        android:textColor="@color/black"
+        android:textColor="@color/secondary"
         android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
@@ -162,14 +185,14 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="389dp"
+        android:layout_width="380dp"
         android:layout_height="79dp"
         android:layout_marginTop="15dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.727"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imageView7"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/imageView7"
         app:layout_constraintTop_toBottomOf="@+id/type"
-        app:srcCompat="@drawable/square2" />
+        app:srcCompat="@drawable/sbutton" />
 
     <TextView
         android:id="@+id/textView13"
@@ -179,6 +202,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="104dp"
         android:text="@string/chicken"
+        android:textColor="@color/login_input"
         android:textSize="30sp"
         app:layout_constraintEnd_toStartOf="@+id/button7"
         app:layout_constraintStart_toStartOf="@+id/imageView2"
@@ -189,17 +213,23 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/updatebtn"
-        android:text="@string/update"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="@color/secondary"
+        android:text="@string/update2"
+        android:textColor="@color/login_input"
         app:layout_constraintEnd_toEndOf="@+id/imageView2"
-        app:layout_constraintTop_toTopOf="@+id/textView13" />
+        app:layout_constraintTop_toTopOf="@+id/textView13"
+        android:padding="10dp" />
 
     <Button
         android:id="@+id/button13"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginEnd="88dp"
+        android:background="@drawable/button"
+        android:padding="10dp"
         android:text="@string/save"
+        android:textColor="@color/login_input"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/button14" />
 
@@ -209,10 +239,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="88dp"
         android:layout_marginTop="28dp"
-        android:backgroundTint="@color/cancel_btn"
+        android:background="@drawable/custom_button"
+        android:backgroundTint="@color/secondary"
+        android:padding="10dp"
         android:text="Delete"
+        android:textColor="@color/login_input"
         app:layout_constraintEnd_toStartOf="@+id/button13"
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView9" />
 

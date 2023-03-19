@@ -10,27 +10,31 @@
 
     <RelativeLayout
         android:id="@+id/rootRL"
-        android:layout_width="461dp"
-        android:layout_height="528dp"
+        android:layout_width="409dp"
+        android:layout_height="469dp"
         android:layout_marginBottom="22dp"
         android:background="@drawable/logo"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+    </RelativeLayout>
 
     <TextView
         android:id="@+id/contact_us_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="29dp"
+        android:layout_marginStart="170dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="137dp"
+        android:layout_marginEnd="120dp"
         android:backgroundTint="#ffffff"
         android:text="@string/contact_us"
-        android:textColor="#000000"
-        android:textSize="50sp"
+        android:textAlignment="center"
+        android:textColor="@color/login_input"
+        android:textSize="@dimen/topic"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -84,8 +88,8 @@
 
     <EditText
         android:id="@+id/contact_discription"
-        android:layout_width="341dp"
-        android:layout_height="82dp"
+        android:layout_width="335dp"
+        android:layout_height="69dp"
         android:layout_marginStart="37dp"
         android:layout_marginTop="33dp"
         android:background="@drawable/roundedges"
@@ -96,19 +100,16 @@
         app:layout_constraintTop_toBottomOf="@+id/contact_subject" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="409dp"
-        android:layout_height="179dp"
+        android:layout_width="411dp"
+        android:layout_height="187dp"
         android:layout_marginStart="1dp"
-        android:layout_marginTop="2dp"
         android:layout_marginEnd="1dp"
         android:background="@drawable/roundedges"
-        android:backgroundTint="#FBB041"
+        android:backgroundTint="@color/secondary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button3"
-        app:layout_constraintVertical_bias="1.0">
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
 
         <TextView
             android:id="@+id/hotline"
@@ -157,16 +158,31 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/email" />
 
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="76dp"
+            android:layout_height="83dp"
+            android:layout_marginStart="118dp"
+            android:layout_marginTop="82dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/Email"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_home_24" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
         android:id="@+id/button3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="8dp"
         android:background="@drawable/button"
-        android:backgroundTint="#4CAF50"
+        android:backgroundTint="@color/secondary"
         android:text="@string/contact_us_submit"
-        tools:layout_editor_absoluteX="155dp"
-        tools:layout_editor_absoluteY="489dp" />
+        android:textSize="@dimen/btn_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rootRL" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

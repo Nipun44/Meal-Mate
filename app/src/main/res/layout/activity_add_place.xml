@@ -7,18 +7,19 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Add Place"
+        android:layout_width="180dp"
+        android:layout_height="67dp"
+        android:layout_marginStart="112dp"
+        android:padding="10dp"
+        android:text="@string/addpalce_topic"
         android:textAlignment="center"
-        android:textColor="@color/heading_text_color"
-        android:textSize="35dp"
+        android:textColor="@color/accent_text_color"
+        android:textSize="@dimen/topic"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.182" />
+        app:layout_constraintVertical_bias="0.096" />
 
     <View
         android:id="@+id/view"
@@ -30,20 +31,20 @@
         app:layout_constraintVertical_bias="0.100000024" />
 
     <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="361dp"
         android:layout_height="467dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view">
+        tools:layout_editor_absoluteY="162dp">
 
         <EditText
             android:id="@+id/editText_name_input_field"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/input_border"
+            android:background="@drawable/button"
             android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
             android:ems="10"
             android:inputType="text"
@@ -55,7 +56,7 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/input_border"
+            android:background="@drawable/button"
             android:drawableLeft="@drawable/giver_location"
             android:ems="10"
             android:inputType="text"
@@ -69,9 +70,22 @@
             android:layout_marginStart="27dp"
             android:layout_marginTop="70dp"
             android:background="@drawable/custom_button"
+            android:padding="10dp"
             android:text="Publish"
-            android:textAllCaps="false" />
+            android:textAllCaps="false"
+            android:textSize="@dimen/btn_text" />
+
     </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="76dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:srcCompat="@drawable/baseline_home_24" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
