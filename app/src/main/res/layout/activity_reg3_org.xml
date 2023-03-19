@@ -4,9 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/secondary"
+    android:background="@color/accent_text_color"
     android:backgroundTint="@color/accent_text_color"
-    tools:context=".Register2">
+    tools:context=".reg3_org">
+
 
     <TextView
         android:id="@+id/textView"
@@ -30,9 +31,9 @@
         android:layout_marginTop="15dp"
         android:background="@drawable/sbutton"
         android:ems="10"
-        android:hint="Enter your name"
+        android:hint="@string/reg_org_name"
         android:inputType="textPersonName"
-        android:text="@string/reg_name"
+        android:text="@string/reg_org_name"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -75,9 +76,9 @@
         android:layout_marginTop="248dp"
         android:background="@drawable/sbutton"
         android:ems="10"
-        android:hint="Enter your name"
+        android:hint="@string/your_name_org_reg"
         android:inputType="textPersonName"
-        android:text="@string/nic_reg"
+        android:text="@string/your_name_org_reg"
         android:textColor="@color/white"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
@@ -114,7 +115,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="100dp"
         android:background="@drawable/button"
-        android:text="@string/Reg_org"
+        android:text="@string/reg_as_in"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
