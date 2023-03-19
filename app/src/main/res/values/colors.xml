@@ -5,9 +5,23 @@
     <color name="purple_700">#FF3700B3</color>
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
-    <color name="black">#FF000000</color>
+    <color name="black">#000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <color name="primarybutton">#F29010</color>
+    <color name="emailbg">#F7BF8D</color>
+    <color name="textFld">#f8dac5</color>
+    <color name="cancel_btn">#f90909</color>
+    <color name="confirm_btn">#0c06fc</color>
+    <color name="login_input">#fbf9f7</color>
+    <color name="updatebtn">#000000</color>
+
+
+
     <color name="primarybutton">#FFA000</color>
+
+    <color name="secondary">#FF7144</color>
+
     <color name="secondary_color_btn">#757575</color>
     <color name="disabled_button_color">#BDBDBD</color>
     <color name="heading_text_color">#212121</color>
@@ -17,6 +31,8 @@
     <color name="secondary_background_color">#FFFFFF</color>
     <color name="border_color">#E0E0E0</color>
     <color name="view_border_color">#D3D3D3</color>
+
+
 
 
 </resources>
