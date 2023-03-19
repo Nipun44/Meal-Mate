@@ -12,6 +12,15 @@
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
+            android:name=".TermsAndConditions"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".About_us"
+            android:exported="false" />
+        <activity
             android:name=".Register"
             android:exported="false" />
         <activity
