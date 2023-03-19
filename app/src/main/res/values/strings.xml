@@ -111,6 +111,9 @@
     <string name="reg_already_login">Login</string>
     <string name="login_loginbutton">Login</string>
     <string name="Reg_org">Register as an Organization</string>
+    <string name="reg_as_in">Register as an Individual</string>
+    <string name="your_name_org_reg">Enter your name</string>
+    <string name="reg_org_name">Name of the Organization</string>
 
 
 </resources>
