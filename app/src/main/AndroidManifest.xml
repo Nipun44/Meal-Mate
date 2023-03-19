@@ -12,6 +12,12 @@
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
+            android:name=".password04"
+            android:exported="false" />
+        <activity
+            android:name=".Password03"
+            android:exported="false" />
+        <activity
             android:name=".lilstDetails"
             android:exported="false" />
         <activity
