@@ -132,6 +132,8 @@
     <string name="reg_org_name">Name of the Organization</string>
     <string name="addpalce_topic">Add Place</string>
     <string name="signup_dont_haveacc">Don\'t have an account</string>
+    <string name="app_name_login">Meal Mate</string>
+    <string name="reg_alreadyhave">Already have an account</string>
 
 
 </resources>

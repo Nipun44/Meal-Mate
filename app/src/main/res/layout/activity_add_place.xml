@@ -13,7 +13,7 @@
         android:padding="10dp"
         android:text="@string/addpalce_topic"
         android:textAlignment="center"
-        android:textColor="@color/accent_text_color"
+        android:textColor="@color/new_primary"
         android:textSize="@dimen/topic"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -34,21 +34,22 @@
         android:id="@+id/linearLayout2"
         android:layout_width="361dp"
         android:layout_height="467dp"
+        android:layout_marginTop="31dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="162dp">
+        app:layout_constraintTop_toBottomOf="@+id/textView">
 
         <EditText
             android:id="@+id/editText_name_input_field"
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/button"
-            android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"
+            android:background="@drawable/sbutton"
             android:ems="10"
             android:inputType="text"
             android:text="Name"
+            android:textColor="@color/secondary_color_btn"
             android:textSize="20dp" />
 
         <EditText
@@ -56,11 +57,11 @@
             android:layout_width="match_parent"
             android:layout_height="70dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/button"
-            android:drawableLeft="@drawable/giver_location"
+            android:background="@drawable/sbutton"
             android:ems="10"
             android:inputType="text"
             android:text="Destination"
+            android:textColor="@color/secondary_color_btn"
             android:textSize="20dp" />
 
         <Button
@@ -73,7 +74,9 @@
             android:padding="10dp"
             android:text="Publish"
             android:textAllCaps="false"
-            android:textSize="@dimen/btn_text" />
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </LinearLayout>
 
