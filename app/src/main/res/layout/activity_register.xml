@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primarybutton"
+    android:background="@color/primary_background_color"
     tools:context=".Register">
 
 
@@ -13,15 +13,15 @@
         android:layout_width="267dp"
         android:layout_height="61dp"
         android:layout_marginStart="72dp"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="54dp"
         android:background="@drawable/button"
         android:shadowColor="#221F1F"
         android:text="@string/Reg1_Individual"
-        android:textColor="@color/primarybutton"
+        android:textColor="@color/login_input"
         android:textStyle="bold"
-        app:backgroundTint="@color/white"
+        app:backgroundTint="@color/new_primary"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView29" />
 
     <Button
         android:id="@+id/button2"
@@ -34,7 +34,7 @@
         android:text="@string/Reg1_organization"
         android:textAlignment="center"
         android:textColor="@color/login_input"
-        app:backgroundTint="@color/primarybutton"
+        app:backgroundTint="@color/new_secondary"
         app:cornerRadius="50dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
@@ -42,13 +42,27 @@
         app:strokeWidth="1dp" />
 
     <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="250dp"
-        android:layout_height="369dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="16dp"
+        android:id="@+id/imageView29"
+        android:layout_width="118dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="55dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_bnw" />
+        app:srcCompat="@drawable/logo_gradient" />
+
+    <TextView
+        android:id="@+id/textView25"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:layout_marginBottom="92dp"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/app_name_login"
+        android:textColor="@color/new_secondary"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

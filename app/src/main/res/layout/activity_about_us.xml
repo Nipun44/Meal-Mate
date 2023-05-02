@@ -13,57 +13,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/about_us"
-        android:textColor="@color/secondary"
+        android:textColor="@color/new_primary"
         android:textSize="@dimen/topic"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="363dp"
-        android:layout_height="562dp"
-        android:layout_marginTop="15dp"
-        android:background="@drawable/corner_round"
-        android:orientation="vertical"
-        android:padding="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:ignore="TextSizeCheck">
-
-        <TextView
-            android:id="@+id/about_us_part1"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/welcome_to_meal_mate_a_mobile_application_that_connects_people_who_have_extra_food_with_volunteers_who_are_interested_in_taking_the_food_our_mission_is_to_reduce_food_waste_and_promote_food_sharing_in_a_safe_and_convenient_way"
-            android:textSize="@dimen/text_normal" />
-
-        <TextView
-            android:id="@+id/about_us_part2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/our_app_is_designed_to_make_it_easy_for_users_to_share_their_extra_food_with_others_whether_you_have_leftovers_from_a_party_or_packaged_food_meal_mate_makes_it_easy_for_you_to_find_someone_who_can_use_it"
-            android:textSize="20sp" />
-
-        <TextView
-            android:id="@+id/about_us_part3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/we_believe_that_food_should_not_go_to_waste_when_there_are_people_who_are_hungry_by_using_our_app_you_are_not_only_helping_to_reduce_food_waste_but_you_are_also_contributing_to_a_more_sustainable_and_equitable_food_system"
-            android:textSize="20sp"
-            tools:ignore="TextSizeCheck" />
-
-        <TextView
-            android:id="@+id/about_us_part4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/we_take_the_safety_of_our_users_very_seriously_that_s_why_we_have_built_in_features_that_allow_users_to_verify_their_identities_communicate_securely_and_rate_their_experiences_with_each_other_we_also_provide_guidelines_and_tips_for_safe_food_sharing_through_the_app"
-            android:textSize="20sp" />
-    </LinearLayout>
 
     <ImageView
         android:id="@+id/imageView22"
