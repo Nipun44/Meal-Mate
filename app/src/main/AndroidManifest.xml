@@ -12,7 +12,9 @@
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
-
+            android:name=".GiveFood"
+            android:exported="false" />
+        <activity
             android:name=".TermsAndConditions"
             android:exported="false" />
         <activity
@@ -44,7 +46,6 @@
             android:exported="false" />
         <activity
             android:name=".meal_dashboard"
-
             android:exported="false" />
         <activity
             android:name=".Register"

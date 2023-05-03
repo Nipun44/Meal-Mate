@@ -4,37 +4,23 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/accent_text_color"
-    android:backgroundTint="@color/accent_text_color"
-    tools:context=".Register3">
-
-
-    <EditText
-        android:id="@+id/editTextTextPersonName2"
-        android:layout_width="304dp"
-        android:layout_height="56dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/sbutton"
-        android:ems="10"
-        android:hint="Enter your name"
-        android:inputType="textPersonName"
-        android:text="@string/reg_email"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+    android:background="@color/secondary"
+    android:backgroundTint="@color/white"
+    tools:context=".Register2">
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="144dp"
-        android:layout_marginTop="124dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="43dp"
         android:text="@string/Register"
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/new_primary"
         android:textSize="34sp"
         android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -42,83 +28,103 @@
         android:id="@+id/editTextTextPersonName"
         android:layout_width="304dp"
         android:layout_height="56dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="43dp"
         android:background="@drawable/sbutton"
         android:ems="10"
-        android:hint="@string/reg_org_name"
+        android:hint="Organization Name"
         android:inputType="textPersonName"
-        android:text="@string/reg_org_name"
-        android:textColor="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/secondary_color_btn"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/editTextTextPersonName2"
         android:layout_width="304dp"
         android:layout_height="56dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="256dp"
+        android:layout_marginTop="21dp"
         android:background="@drawable/sbutton"
         android:ems="10"
-        android:hint="@string/your_name_org_reg"
+        android:hint="Email Address"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
         android:inputType="textPersonName"
-        android:text="@string/your_name_org_reg"
-        android:textColor="@color/white"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="133dp"
-        android:layout_height="92dp"
-        android:layout_marginStart="140dp"
-        android:layout_marginTop="32dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_bnw" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="106dp"
-        android:layout_height="53dp"
-        android:layout_marginTop="32dp"
-        android:layout_marginEnd="44dp"
-        android:background="@drawable/custom_button"
-        android:padding="10dp"
-        android:text="@string/reg_already_login"
-        android:textAlignment="center"
-        android:textAllCaps="false"
-        android:textColor="@color/login_input"
-        android:textSize="20sp"
+        android:textColor="@color/secondary_color_btn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="304dp"
         android:layout_height="56dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginTop="180dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/sbutton"
         android:ems="10"
-        android:hint="Enter your name"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
+        android:hint="Contact Number"
         android:inputType="textPersonName"
-        android:text="@string/reg_phonenum"
-        android:textColor="@color/white"
+        android:textColor="@color/secondary_color_btn"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
 
-    <Switch
-        android:id="@+id/switch2"
-        android:layout_width="326dp"
-        android:layout_height="95dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/button"
-        android:text="@string/reg_as_in"
-        android:textSize="20sp"
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="304dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/sbutton"
+        android:ems="10"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="5dp"
+        android:hint="Valid ID Number"
+        android:inputType="textPersonName"
+        android:textColor="@color/secondary_color_btn"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="128dp"
+        android:text="@string/reg_alreadyhave"
+        android:textColor="@color/new_primary"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.432"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="286dp"
+        android:layout_height="49dp"
+        android:background="@drawable/button"
+        android:text="@string/sign_up"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintVertical_bias="0.53" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
