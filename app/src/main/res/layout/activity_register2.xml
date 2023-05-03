@@ -125,6 +125,8 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        app:layout_constraintVertical_bias="0.53" />
+        app:layout_constraintVertical_bias="0.53"
+    android:textAllCaps="false"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
