@@ -64,15 +64,14 @@
     <string name="forget_password2">FORGET</string>
     <string name="NEWCorentials1">Your identity has been verified!\nSet your new password</string>
 
-    <Stirng_array name="foodType">
-        <item></item>
+    <string-array name="food_type">
         <item>Vegetable</item>
         <item>Age</item>
         <item>Fish</item>
         <item>Chicken</item>
         <item>Pork</item>
         <item>Beef</item>
-    </Stirng_array>
+    </string-array>
 
 
     <string name="location_name_dashboard">Location</string>
