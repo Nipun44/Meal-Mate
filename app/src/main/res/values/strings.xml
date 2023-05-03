@@ -135,6 +135,8 @@
     <string name="reg_alreadyhave">Already have an account</string>
     <string name="mealmateicon">mealMateIcon</string>
     <string name="sign_up">SignUp</string>
+    <string name="signup">SignUp</string>
+    <string name="SignUp">Sign Up</string>
 
 
 </resources>

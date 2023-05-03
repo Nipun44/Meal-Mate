@@ -117,7 +117,7 @@
         android:layout_width="286dp"
         android:layout_height="49dp"
         android:background="@drawable/button"
-        android:text="@string/sign_up"
+        android:text="@string/SignUp"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/textView27"
