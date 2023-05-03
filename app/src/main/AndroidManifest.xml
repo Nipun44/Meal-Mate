@@ -33,8 +33,10 @@
             android:name=".request"
             android:exported="false" />
         <activity
-            android:name=".givePartfood"
-            android:exported="false" />
+            android:name=".GivePartfood"
+            android:exported="false" >
+
+        </activity>
         <activity
             android:name=".forgetpassword2"
             android:exported="false" />
@@ -64,6 +66,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 
