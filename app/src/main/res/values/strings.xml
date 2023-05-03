@@ -133,6 +133,7 @@
     <string name="signup_dont_haveacc">Don\'t have an account</string>
     <string name="app_name_login">Meal Mate</string>
     <string name="reg_alreadyhave">Already have an account</string>
+    <string name="mealmateicon">mealMateIcon</string>
 
 
 </resources>

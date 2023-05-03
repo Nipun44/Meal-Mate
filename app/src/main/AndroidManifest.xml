@@ -34,9 +34,6 @@
             android:name=".givePartfood"
             android:exported="false" />
         <activity
-            android:name=".forgetPassword3"
-            android:exported="false" />
-        <activity
             android:name=".forgetpassword2"
             android:exported="false" />
         <activity
@@ -51,6 +48,12 @@
             android:exported="false" />
         <activity
             android:name=".Register"
+            android:exported="false" />
+        <activity
+            android:name=".Register2"
+            android:exported="false" />
+        <activity
+            android:name=".Register3"
             android:exported="false" />
         <activity
             android:name=".MainActivity"

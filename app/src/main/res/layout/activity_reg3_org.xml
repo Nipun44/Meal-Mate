@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/accent_text_color"
     android:backgroundTint="@color/accent_text_color"
-    tools:context=".reg3_org">
+    tools:context=".Register3">
 
 
     <EditText

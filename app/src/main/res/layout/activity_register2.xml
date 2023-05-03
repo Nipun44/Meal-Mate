@@ -110,7 +110,7 @@
     <Button
         android:id="@+id/button16"
         android:layout_width="300dp"
-        android:layout_height="47dp"
+        android:layout_height="48dp"
         android:layout_marginStart="55dp"
         android:layout_marginTop="36dp"
         android:background="@drawable/button"
