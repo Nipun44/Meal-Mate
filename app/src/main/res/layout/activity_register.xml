@@ -48,14 +48,15 @@
     <ImageView
         android:id="@+id/imageView29"
         android:layout_width="118dp"
-        android:layout_height="320dp"
-        android:layout_marginTop="55dp"
+        android:layout_height="249dp"
+        android:layout_marginTop="108dp"
+        android:contentDescription="@string/mealmateicon"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_gradient"
-        tools:ignore="ImageContrastCheck"
-        android:contentDescription="@string/mealmateicon" />
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textView25"
