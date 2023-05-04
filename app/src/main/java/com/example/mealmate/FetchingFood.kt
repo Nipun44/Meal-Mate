@@ -1,6 +1,7 @@
 package com.example.mealmate
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -48,6 +49,21 @@ class FetchingFood : AppCompatActivity() {
                     }
                     val mAdapter = FoodAdapter(foodList)
                     empRecyclerView.adapter = mAdapter
+
+
+                    mAdapter.setOnItemClickListener(object: FoodAdapter.onItemClickListener{
+                        override fun onItemClick(position: Int) {
+                            val intent = Intent(this@FetchingFood,SingleItemView::class.java)
+
+                            intent.putExtra("foodId",foodList[position].foodId)
+                            intent.putExtra("foodName",foodList[position].typeFood)
+                            intent.putExtra("foodDesc",foodList[position].descriptionFood)
+                            intent.putExtra("foodQuantity",foodList[position].quantityFood)
+
+                            startActivity(intent)
+                        }
+
+                    })
 
                     empRecyclerView.visibility = View.VISIBLE
                     tvLoadingData.visibility = View.GONE
