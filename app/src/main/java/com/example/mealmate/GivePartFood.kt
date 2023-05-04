@@ -8,12 +8,11 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 
-class GivePartfood : AppCompatActivity() {
+class GivePartFood : AppCompatActivity() {
 
     private lateinit var selectType: Spinner
     private lateinit var quantity: EditText
     private lateinit var description: EditText
-//    private lateinit var anonymous: RadioButton
     private lateinit var btnConfirm: Button
     private lateinit var btnBack: Button
 
@@ -36,22 +35,13 @@ class GivePartfood : AppCompatActivity() {
             saveFoodData()
         }
 
-
-
-
-
     }
 
     private fun saveFoodData(){
         //geting values
-
         val typeFood = selectType.selectedItem.toString()
         val quantityFood = quantity.text.toString()
         val descriptionFood = description.text.toString()
-//        val anonymousFood = anonymous.text.toString()
-
-
-
 
 
         if(typeFood.isEmpty()){

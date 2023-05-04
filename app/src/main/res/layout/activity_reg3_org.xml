@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/secondary"
     android:backgroundTint="@color/white"
-    tools:context=".Register2">
+    tools:context=".Register3">
 
     <TextView
         android:id="@+id/textView"

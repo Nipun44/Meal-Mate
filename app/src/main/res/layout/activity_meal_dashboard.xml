@@ -4,101 +4,32 @@
     android:id="@+id/relativeLayout2"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    tools:context=".MealDashboard"
+    >
 
 
-    <LinearLayout
-        android:id="@+id/summary_layout"
-        android:layout_width="394dp"
-        android:layout_height="97dp"
-        android:background="@drawable/corner_round"
-        android:backgroundTint="@color/secondary"
-        android:orientation="horizontal"
-        android:padding="16dp"
+    <Button
+        android:id="@+id/iHaveExtraBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="236dp"
+        android:layout_marginBottom="35dp"
+        android:text="I Have Extra"
+        app:layout_constraintBottom_toTopOf="@+id/doYouHaveExtraBtn"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="116dp"
-        tools:ignore="MissingConstraints">
+        app:layout_constraintTop_toTopOf="parent" />
 
-
-        <TextView
-            android:id="@+id/veggie_summary_textview"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/vegi_meal_per"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/non_veggie_summary_textview"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:text="@string/non_vegi_per"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            android:textStyle="bold" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="421dp"
-        android:layout_height="319dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#5A5757"
-        android:orientation="vertical"
-        android:padding="5dp"
+    <Button
+        android:id="@+id/doYouHaveExtraBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="364dp"
+        android:text="Do you have Extra"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/summary_layout"
-        app:layout_constraintVertical_bias="0.065">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/button"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/textView4"
-                android:layout_width="48dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:paddingTop="20dp"
-                android:text="TextView"
-                android:textAlignment="textStart"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:text="@string/Name_of_donater_dashboard" />
-
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/qty_dashboard" />
-
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Desciption_dashboard" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

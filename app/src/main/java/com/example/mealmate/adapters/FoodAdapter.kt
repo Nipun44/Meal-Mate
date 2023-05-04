@@ -11,9 +11,19 @@ import com.example.mealmate.models.FoodModel
 class FoodAdapter(private val foodList: ArrayList<FoodModel>):
     RecyclerView.Adapter<FoodAdapter.ViewHolder>(){
 
+    private lateinit var fListener : onItemClickListener
+
+    interface onItemClickListener{
+        fun onItemClick(position: Int)
+    }
+
+    fun setOnItemClickListener(clickListener: onItemClickListener){
+        fListener = clickListener
+
+    }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val itemView = LayoutInflater.from(parent.context).inflate(R.layout.food_list_item,parent,false)
-        return ViewHolder(itemView)
+        return ViewHolder(itemView,fListener)
     }
 
     override fun onBindViewHolder(holder: FoodAdapter.ViewHolder, position: Int) {
@@ -25,8 +35,14 @@ class FoodAdapter(private val foodList: ArrayList<FoodModel>):
         return foodList.size
     }
 
-    class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View, clickListener: onItemClickListener) : RecyclerView.ViewHolder(itemView) {
         val tvFoodName : TextView = itemView.findViewById(R.id.tvFoodName)
+
+        init{
+            itemView.setOnClickListener {
+                clickListener.onItemClick(adapterPosition)
+            }
+        }
     }
 
 }
