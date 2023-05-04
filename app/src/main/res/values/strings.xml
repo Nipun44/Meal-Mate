@@ -134,6 +134,11 @@
     <string name="signup_dont_haveacc">Don\'t have an account</string>
     <string name="app_name_login">Meal Mate</string>
     <string name="reg_alreadyhave">Already have an account</string>
+    <string name="register_submit">Submit</string>
+    <string name="notice_topic">Topic</string>
+    <string name="notice_des">Description</string>
+    <string name="notice_title">Publish Notice</string>
+    <string name="notice_back">Back</string>
 
 
 </resources>

@@ -12,19 +12,13 @@
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
-
+            android:name=".addNotice"
+            android:exported="false" />
+        <activity
             android:name=".TermsAndConditions"
             android:exported="false" />
         <activity
             android:name=".AboutUs"
-            android:exported="false" />
-        <activity
-            android:name=".About_us"
-
-            android:name=".reg3_org"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity2cccccccccccccccccc"
             android:exported="false" />
         <activity
             android:name=".Profile"
@@ -36,16 +30,10 @@
             android:name=".lilstDetails"
             android:exported="false" />
         <activity
-            android:name=".updateDetails"
-            android:exported="false" />
-        <activity
             android:name=".request"
             android:exported="false" />
         <activity
             android:name=".givePartfood"
-            android:exported="false" />
-        <activity
-            android:name=".givePart"
             android:exported="false" />
         <activity
             android:name=".forgetPassword3"
@@ -61,7 +49,6 @@
             android:exported="false" />
         <activity
             android:name=".meal_dashboard"
-
             android:exported="false" />
         <activity
             android:name=".Register"
