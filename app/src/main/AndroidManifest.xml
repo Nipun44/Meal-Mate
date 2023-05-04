@@ -12,7 +12,7 @@
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
-            android:name=".addNotice"
+            android:name=".GiveFood"
             android:exported="false" />
         <activity
             android:name=".TermsAndConditions"
@@ -33,11 +33,10 @@
             android:name=".request"
             android:exported="false" />
         <activity
-            android:name=".givePartfood"
-            android:exported="false" />
-        <activity
-            android:name=".forgetPassword3"
-            android:exported="false" />
+            android:name=".GivePartfood"
+            android:exported="false" >
+
+        </activity>
         <activity
             android:name=".forgetpassword2"
             android:exported="false" />
@@ -54,6 +53,12 @@
             android:name=".Register"
             android:exported="false" />
         <activity
+            android:name=".Register2"
+            android:exported="false" />
+        <activity
+            android:name=".Register3"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
@@ -61,6 +66,7 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
     </application>
 

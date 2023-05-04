@@ -64,15 +64,14 @@
     <string name="forget_password2">FORGET</string>
     <string name="NEWCorentials1">Your identity has been verified!\nSet your new password</string>
 
-    <Stirng_array name="foodType">
-        <item></item>
+    <string-array name="food_type">
         <item>Vegetable</item>
         <item>Age</item>
         <item>Fish</item>
         <item>Chicken</item>
         <item>Pork</item>
         <item>Beef</item>
-    </Stirng_array>
+    </string-array>
 
 
     <string name="location_name_dashboard">Location</string>
@@ -134,11 +133,8 @@
     <string name="signup_dont_haveacc">Don\'t have an account</string>
     <string name="app_name_login">Meal Mate</string>
     <string name="reg_alreadyhave">Already have an account</string>
-    <string name="register_submit">Submit</string>
-    <string name="notice_topic">Topic</string>
-    <string name="notice_des">Description</string>
-    <string name="notice_title">Publish Notice</string>
-    <string name="notice_back">Back</string>
+    <string name="mealmateicon">mealMateIcon</string>
+    <string name="sign_up">SignUp</string>
 
 
 </resources>

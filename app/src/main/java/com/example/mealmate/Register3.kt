@@ -3,9 +3,9 @@ package com.example.mealmate
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class forgetPassword3 : AppCompatActivity() {
+class Register3 : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_forget_password3)
+        setContentView(R.layout.activity_reg3_org)
     }
 }

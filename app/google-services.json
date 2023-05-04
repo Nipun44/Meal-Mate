@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "694485018952",
+    "project_id": "meal-mate-3845e",
+    "storage_bucket": "meal-mate-3845e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:694485018952:android:476f80b86e460843146b7d",
+        "android_client_info": {
+          "package_name": "com.example.mealmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "694485018952-dlhi4p07t6bu6r2mbsr0qn92f7d1aopk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVjkEOfzamRvo_-HY8HuhgHPKeTlRV0bE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "694485018952-dlhi4p07t6bu6r2mbsr0qn92f7d1aopk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

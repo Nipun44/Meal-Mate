@@ -5,12 +5,8 @@
     android:id="@+id/relativeLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primarybutton"
-    tools:context=".givePartfood">
-
-
-    <?xml version="1.0" encoding="utf-8"?>
-
+    android:background="@color/white"
+    tools:context=".GivePartfood">
 
     <ImageView
         android:id="@+id/imageView24"
@@ -59,7 +55,7 @@
         android:text="@string/i_have_extras"
 
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -82,10 +78,9 @@
         android:id="@+id/spinner"
         android:layout_width="331dp"
         android:layout_height="59dp"
-
         android:layout_marginTop="25dp"
         android:background="@android:drawable/btn_dropdown"
-
+        android:entries="@array/food_type"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/type" />
@@ -104,7 +99,7 @@
 
     <EditText
 
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/quantityfeeld"
         android:layout_width="331dp"
         android:layout_height="59dp"
         android:layout_marginTop="25dp"
@@ -132,7 +127,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/quantityfeeld" />
 
     <EditText
         android:id="@+id/descriptinfeld"
@@ -157,6 +152,7 @@
         android:layout_marginStart="30dp"
 
         android:layout_marginTop="24dp"
+        android:minHeight="48dp"
         android:onClick="onRadioButtonClicked"
         android:text="@string/as_an_anonymous"
         android:textSize="25sp"
@@ -165,15 +161,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descriptinfeld" />
 
-
-    <!--    <string-array android:name="foodType">-->
-<!--        <item></item>-->
-<!--        <item>Chicken</item>-->
-<!--        <item>Beef</item>-->
-<!--        <item>Vegetable</item>-->
-<!--        <item>Pork</item>-->
-<!--    </string-array>-->
-<!--    &lt;!&ndash; TODO: Remove or change this placeholder text &ndash;&gt;-->
-<!--    <string name="hello_blank_fragment">Hello blank fragment</string>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
