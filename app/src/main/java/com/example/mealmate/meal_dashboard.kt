@@ -3,9 +3,9 @@ package com.example.mealmate
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class Register3 : AppCompatActivity() {
+class meal_dashboard : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_reg3_org)
+        setContentView(R.layout.activity_meal_dashboard)
     }
 }
