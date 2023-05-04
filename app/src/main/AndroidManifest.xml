@@ -72,9 +72,7 @@
         <activity
             android:name=".Register3"
             android:exported="false" />
-        <activity
-            android:name=".Register3"
-            android:exported="false" />
+
         <activity
             android:name=".addNotice"
             android:exported="true">
