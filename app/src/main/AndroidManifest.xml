@@ -67,9 +67,9 @@
         <activity
             android:name=".Register2"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".Register3"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".Register3"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
