@@ -5,8 +5,8 @@
     android:id="@+id/relativeLayout5"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/primarybutton"
-    tools:context=".givePartfood">
+    android:background="@color/white"
+    tools:context=".GivePartfood">
 
     <ImageView
         android:id="@+id/imageView24"
@@ -55,7 +55,7 @@
         android:text="@string/i_have_extras"
 
         android:textAlignment="center"
-        android:textColor="@color/white"
+        android:textColor="@color/black"
         android:textSize="34sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -99,7 +99,7 @@
 
     <EditText
 
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/quantityfeeld"
         android:layout_width="331dp"
         android:layout_height="59dp"
         android:layout_marginTop="25dp"
@@ -127,7 +127,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/quantityfeeld" />
 
     <EditText
         android:id="@+id/descriptinfeld"
