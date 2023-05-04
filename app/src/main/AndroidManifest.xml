@@ -45,7 +45,7 @@
             android:name=".login"
             android:exported="false" />
         <activity
-            android:name=".meal_dashboard"
+            android:name=".MealDashboard"
             android:exported="false" />
         <activity
             android:name=".Register"

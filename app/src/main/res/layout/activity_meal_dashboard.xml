@@ -7,45 +7,19 @@
     android:background="#FFFFFF">
 
 
-    <ImageView
-        android:id="@+id/imageView26"
-        android:layout_width="76dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="164dp"
-        android:layout_marginTop="648dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/baseline_home_24" />
-
-    <TextView
-        android:id="@+id/app_name_textview"
-        android:layout_width="385dp"
-        android:layout_height="68dp"
-        android:gravity="center_horizontal"
-        android:padding="16dp"
-        android:text="@string/location_name_dashboard"
-        android:textAlignment="center"
-        android:textColor="@color/secondary"
-        android:textSize="34sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
     <LinearLayout
         android:id="@+id/summary_layout"
         android:layout_width="394dp"
         android:layout_height="97dp"
-        android:layout_marginBottom="548dp"
         android:background="@drawable/corner_round"
         android:backgroundTint="@color/secondary"
         android:orientation="horizontal"
         android:padding="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.47"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="116dp"
+        tools:ignore="MissingConstraints">
 
 
         <TextView
@@ -73,19 +47,23 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_width="408dp"
-        android:layout_height="507dp"
+        android:layout_width="421dp"
+        android:layout_height="319dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="2dp"
         android:backgroundTint="#5A5757"
         android:orientation="vertical"
         android:padding="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/summary_layout">
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/summary_layout"
+        app:layout_constraintVertical_bias="0.065">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="81dp"
+            android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:background="@drawable/button"
             android:orientation="horizontal"
@@ -93,8 +71,8 @@
 
             <TextView
                 android:id="@+id/textView4"
-                android:layout_width="67dp"
-                android:layout_height="96dp"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:padding="15dp"
                 android:paddingTop="20dp"
@@ -120,42 +98,6 @@
                 android:text="@string/Desciption_dashboard" />
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="81dp"
-            android:layout_margin="5dp"
-            android:background="@drawable/button"
-            android:orientation="horizontal"
-            android:padding="10dp">
-
-            <TextView
-                android:id="@+id/textView14"
-                android:layout_width="67dp"
-                android:layout_height="96dp"
-                android:layout_weight="1"
-                android:padding="15dp"
-                android:paddingTop="20dp"
-                android:text="TextView"
-                android:textAlignment="textStart"
-                android:textColor="@color/black"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:text="@string/Name_of_donater_dashboard" />
-
-            <TextView
-                android:id="@+id/textView16"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/qty_dashboard" />
-
-            <TextView
-                android:id="@+id/textView17"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="@string/Desciption_dashboard" />
-        </LinearLayout>
     </LinearLayout>
 
 
