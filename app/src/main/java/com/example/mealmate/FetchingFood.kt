@@ -1,6 +1,7 @@
 package com.example.mealmate
 
 import android.annotation.SuppressLint
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -13,7 +14,7 @@ import com.google.firebase.database.*
 
 class FetchingFood : AppCompatActivity() {
 
-    private lateinit var empRecyclerView: RecyclerView
+    private lateinit var foodRecyclerView: RecyclerView
     private lateinit var tvLoadingData: TextView
     private lateinit var foodList: ArrayList<FoodModel>
     private lateinit var dbRef: DatabaseReference
@@ -23,9 +24,9 @@ class FetchingFood : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fetching_food)
 
-        empRecyclerView = findViewById(R.id.rvFood)
-        empRecyclerView.layoutManager = LinearLayoutManager(this)
-        empRecyclerView.setHasFixedSize(true)
+        foodRecyclerView = findViewById(R.id.rvFood)
+        foodRecyclerView.layoutManager = LinearLayoutManager(this)
+        foodRecyclerView.setHasFixedSize(true)
         tvLoadingData = findViewById(R.id.tvLoadingData)
 
         foodList = arrayListOf<FoodModel>()
@@ -33,7 +34,7 @@ class FetchingFood : AppCompatActivity() {
         getFoodsData()
     }
     private fun getFoodsData() {
-        empRecyclerView.visibility = View.GONE
+        foodRecyclerView.visibility = View.GONE
         tvLoadingData.visibility = View.VISIBLE
 
         dbRef = FirebaseDatabase.getInstance().getReference("Foods")
@@ -47,9 +48,29 @@ class FetchingFood : AppCompatActivity() {
                         foodList.add(foodData!!)
                     }
                     val mAdapter = FoodAdapter(foodList)
-                    empRecyclerView.adapter = mAdapter
+                    foodRecyclerView.adapter = mAdapter
 
-                    empRecyclerView.visibility = View.VISIBLE
+                    mAdapter.setOnItemClickListener(object : FoodAdapter.onItemClickListener{
+                        override fun onItemClick(position: Int) {
+                            val intent = Intent(this@FetchingFood,FoodDetails::class.java)
+
+                            //put the  extra values in foodList
+
+                            intent.putExtra("foodId",foodList[position].foodId)
+                            intent.putExtra("foodType",foodList[position].typeFood)
+                            intent.putExtra("foodQuantity",foodList[position].quantityFood)
+                            intent.putExtra("foodDescription",foodList[position].descriptionFood)
+                            startActivity(intent)
+
+
+
+
+
+                        }
+
+                    })
+
+                    foodRecyclerView.visibility = View.VISIBLE
                     tvLoadingData.visibility = View.GONE
                 }
             }
