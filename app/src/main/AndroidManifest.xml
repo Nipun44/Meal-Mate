@@ -12,8 +12,18 @@
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
-            android:name=".GiveFood"
-            android:exported="false" />
+            android:name=".FetchingFood"
+            android:exported="false">
+
+
+
+        </activity>
+<!--        <activity-->
+<!--            android:name=".foodList"-->
+<!--            android:exported="false" />-->
+<!--        <activity-->
+<!--            android:name=".GiveFood"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".TermsAndConditions"
             android:exported="false" />
@@ -34,7 +44,9 @@
             android:exported="false" />
         <activity
             android:name=".GivePartfood"
-            android:exported="false" >
+            android:exported="false">
+
+
 
         </activity>
         <activity
@@ -55,12 +67,13 @@
         <activity
             android:name=".Register2"
             android:exported="false" />
-        <activity
-            android:name=".Register3"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".Register3"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".MainActivity"
             android:exported="true">
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
