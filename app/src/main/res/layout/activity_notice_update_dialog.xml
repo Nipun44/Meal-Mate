@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/etNoticeTopic"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_marginTop="20dp"
+        android:hint="Topic"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etNoticePlace"
+        android:layout_width="match_parent"
+        android:layout_height="84dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Place" />
+
+    <EditText
+        android:id="@+id/etNoticeDate"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etNoticeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/btnUpdateData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Update Data" />
+
+
+</LinearLayout>

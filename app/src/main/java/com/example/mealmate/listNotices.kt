@@ -56,7 +56,7 @@ class listNotices : AppCompatActivity() {
                     mAdaptor.setOnItemClickListener(object : NoticeAdapter.onItemClickListener{
                         override fun onItemClick(position: Int) {
                             val intent = Intent(this@listNotices, noticeDetails::class.java)
-
+                            intent.putExtra("nID",noticeList[position].noticeID)
                             intent.putExtra("nDate", noticeList[position].nDate)
                             intent.putExtra("nTopic", noticeList[position].nTopic)
                             intent.putExtra("nPlace", noticeList[position].nPlace)

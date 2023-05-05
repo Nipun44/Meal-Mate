@@ -7,13 +7,13 @@
     tools:context=".noticeDetails">
 
     <Button
-        android:id="@+id/btnUpdate"
+        android:id="@+id/btnUpdate1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
         android:text="Update"
         app:layout_constraintEnd_toStartOf="@+id/btnDelete"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
@@ -21,7 +21,8 @@
         android:id="@+id/btnDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="68dp"
         android:text="Delete"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -39,7 +40,7 @@
 
 
         <LinearLayout
-            android:id="@+id/id_linar"
+            android:id="@+id/id_lin"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginLeft="10dp"
@@ -54,7 +55,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/primary_background_color">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -73,7 +74,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvNDate"
+                    android:id="@+id/tvNoticeDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -91,7 +92,7 @@
 
 
         <LinearLayout
-            android:id="@+id/contact_linear"
+            android:id="@+id/contact_lin"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginLeft="10dp"
@@ -103,7 +104,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/primary_background_color">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -153,7 +154,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/primary_background_color">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -175,7 +176,7 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvNoticePlacee"
+                    android:id="@+id/tvNoticePlace"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
@@ -207,7 +208,7 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/primary_background_color">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
