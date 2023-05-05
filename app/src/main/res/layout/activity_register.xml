@@ -16,7 +16,8 @@
         android:background="@drawable/button"
         android:shadowColor="#221F1F"
         android:text="@string/Reg1_Individual"
-        android:textColor="#455A64"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
         android:textStyle="bold"
         app:backgroundTint="@color/new_primary"
         app:layout_constraintEnd_toEndOf="parent"
@@ -32,6 +33,7 @@
         android:backgroundTint="@color/primarybutton"
         android:text="@string/Reg1_organization"
         android:textAlignment="center"
+        android:textAllCaps="false"
         android:textColor="@color/login_input"
         app:backgroundTint="@color/new_secondary"
         app:cornerRadius="50dp"
@@ -48,14 +50,15 @@
     <ImageView
         android:id="@+id/imageView29"
         android:layout_width="118dp"
-        android:layout_height="320dp"
-        android:layout_marginTop="55dp"
+        android:layout_height="249dp"
+        android:layout_marginTop="108dp"
+        android:contentDescription="@string/mealmateicon"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo_gradient"
-        tools:ignore="ImageContrastCheck"
-        android:contentDescription="@string/mealmateicon" />
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/textView25"
