@@ -37,29 +37,45 @@ class noticeDetails : AppCompatActivity() {
             )
         }
 
-        btnDelete.setOnClickListener{
-            deleteRecord(
-                intent.getStringExtra("nID").toString()
-            )
+        btnDelete.setOnClickListener {
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Confirm Deletion")
+            builder.setMessage("Are you sure you want to delete this record?")
+            builder.setPositiveButton("Yes") { _, _ ->
+                deleteRecord(intent.getStringExtra("nID").toString())
+            }
+            builder.setNegativeButton("No") { dialog, _ ->
+                dialog.dismiss()
+            }
+            val dialog = builder.create()
+            dialog.show()
         }
+
     }
 
-    private fun deleteRecord(
-        id:String
-    ){
+    private fun deleteRecord(id: String) {
         val dbRef = FirebaseDatabase.getInstance().getReference("Notices").child(id)
-        val nTask = dbRef.removeValue()
-
-        nTask.addOnSuccessListener {
-            Toast.makeText(this,"Notice is Successfully Deleted", Toast.LENGTH_LONG).show()
-            val intent = Intent(this, listNotices::class.java)
-            finish()
-            startActivity(intent)
-        }.addOnFailureListener{ error ->
-            Toast.makeText(this, "Deleting error is occurred ", Toast.LENGTH_LONG).show()
-
+        val builder = AlertDialog.Builder(this)
+        builder.setTitle("Confirm Deletion")
+        builder.setMessage("Are you sure you want to delete this record?")
+        builder.setPositiveButton("Yes") { _, _ ->
+            dbRef.removeValue().addOnSuccessListener {
+                Toast.makeText(this, "Notice is Successfully Deleted", Toast.LENGTH_LONG).show()
+                val intent = Intent(this, listNotices::class.java)
+                finish()
+                startActivity(intent)
+            }.addOnFailureListener { error ->
+                Toast.makeText(this, "Deleting error is occurred ", Toast.LENGTH_LONG).show()
+            }
         }
+        builder.setNegativeButton("No") { dialog, _ ->
+            dialog.dismiss()
+        }
+        val dialog = builder.create()
+        dialog.show()
     }
+
+
     private fun initView(){
 //        tvNoticeId = findViewById(R.id.tvNoticeId)
         tvNTopic = findViewById(R.id.tvNoticeTopic)
