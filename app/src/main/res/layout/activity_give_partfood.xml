@@ -1,4 +1,161 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:id="@+id/relativeLayout5"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:background="@color/white"-->
+<!--    tools:context=".GivePartfood">-->
+
+
+
+<!--    <Button-->
+<!--        android:id="@+id/button5"-->
+<!--        android:layout_width="129dp"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:layout_marginStart="48dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:background="@drawable/custom_button"-->
+<!--        android:backgroundTint="@color/secondary"-->
+<!--        android:padding="10dp"-->
+<!--        android:text="@string/confirm"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/descriptinfeld"-->
+<!--        app:layout_constraintVertical_bias="0.0" />-->
+
+<!--    <Button-->
+<!--        android:id="@+id/button6"-->
+<!--        android:layout_width="129dp"-->
+<!--        android:layout_height="48dp"-->
+
+<!--        android:layout_marginStart="60dp"-->
+<!--        android:background="@drawable/button"-->
+<!--        android:backgroundTint="@color/disabled_button_color"-->
+<!--        android:padding="10dp"-->
+<!--        android:text="@string/back"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/button5"-->
+<!--        app:layout_constraintTop_toTopOf="@+id/button5" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/give"-->
+<!--        android:layout_width="255dp"-->
+<!--        android:layout_height="54dp"-->
+
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:text="@string/i_have_extras"-->
+
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="34sp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/type"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="@string/select_type"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="25sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/give" />-->
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner"-->
+<!--        android:layout_width="331dp"-->
+<!--        android:layout_height="59dp"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:background="@android:drawable/btn_dropdown"-->
+<!--        android:entries="@array/food_type"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/type" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/quantity"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="30dp"-->
+<!--        android:layout_marginTop="20dp"-->
+<!--        android:text="@string/quantity"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="25sp"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/spinner" />-->
+
+<!--    <EditText-->
+
+<!--        android:id="@+id/quantityfeeld"-->
+<!--        android:layout_width="331dp"-->
+<!--        android:layout_height="59dp"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:background="@color/textFld"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:paddingRight="20dp"-->
+<!--        android:text="@string/enter_quantity"-->
+<!--        android:autofillHints="enter quantity"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/quantity" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/descriptionname"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="30dp"-->
+
+<!--        android:layout_marginTop="32dp"-->
+<!--        android:text="@string/description"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="25sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/quantityfeeld" />-->
+
+<!--    <EditText-->
+<!--        android:id="@+id/descriptinfeld"-->
+<!--        android:layout_width="331dp"-->
+<!--        android:layout_height="59dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:background="@color/textFld"-->
+<!--        android:ems="10"-->
+<!--        android:inputType="textPersonName"-->
+<!--        android:paddingLeft="20dp"-->
+<!--        android:paddingRight="20dp"-->
+<!--        android:text="@string/enter_description"-->
+<!--        android:autofillHints="enter description"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/descriptionname" />-->
+
+<!--&lt;!&ndash;    <RadioButton&ndash;&gt;-->
+<!--&lt;!&ndash;        android:id="@+id/radio_pirates"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_width="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_height="wrap_content"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:layout_marginStart="30dp"&ndash;&gt;-->
+
+<!--&lt;!&ndash;        android:layout_marginTop="24dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:minHeight="48dp"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:onClick="onRadioButtonClicked"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:text="@string/as_an_anonymous"&ndash;&gt;-->
+<!--&lt;!&ndash;        android:textSize="25sp"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintHorizontal_bias="0.0"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+<!--&lt;!&ndash;        app:layout_constraintTop_toBottomOf="@+id/descriptinfeld" />&ndash;&gt;-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -22,7 +179,7 @@
         android:text="@string/confirm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/radio_pirates"
+        app:layout_constraintTop_toBottomOf="@+id/descriptinfeld"
         app:layout_constraintVertical_bias="0.0" />
 
     <Button
@@ -66,16 +223,34 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/give" />
 
-    <Spinner
-        android:id="@+id/spinner"
+
+    <EditText
+
+        android:id="@+id/typeField"
         android:layout_width="331dp"
         android:layout_height="59dp"
         android:layout_marginTop="25dp"
-        android:background="@android:drawable/btn_dropdown"
-        android:entries="@array/food_type"
+        android:background="@color/textFld"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="@string/enter_quantity"
+        android:autofillHints="enter quantity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/type" />
+
+<!--    <Spinner-->
+<!--        android:id="@+id/spinner"-->
+<!--        android:layout_width="331dp"-->
+<!--        android:layout_height="59dp"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:background="@android:drawable/btn_dropdown"-->
+<!--        android:entries="@array/food_type"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/type" />-->
 
     <TextView
         android:id="@+id/quantity"
@@ -87,7 +262,7 @@
         android:textColor="@color/black"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/typeField" />
 
     <EditText
 
@@ -137,21 +312,21 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descriptionname" />
 
-<!--    <RadioButton-->
-<!--        android:id="@+id/radio_pirates"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginStart="30dp"-->
+    <!--    <RadioButton-->
+    <!--        android:id="@+id/radio_pirates"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginStart="30dp"-->
 
-<!--        android:layout_marginTop="24dp"-->
-<!--        android:minHeight="48dp"-->
-<!--        android:onClick="onRadioButtonClicked"-->
-<!--        android:text="@string/as_an_anonymous"-->
-<!--        android:textSize="25sp"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toBottomOf="@+id/descriptinfeld" />-->
+    <!--        android:layout_marginTop="24dp"-->
+    <!--        android:minHeight="48dp"-->
+    <!--        android:onClick="onRadioButtonClicked"-->
+    <!--        android:text="@string/as_an_anonymous"-->
+    <!--        android:textSize="25sp"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintHorizontal_bias="0.0"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/descriptinfeld" />-->
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
