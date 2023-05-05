@@ -4,8 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import com.example.mealmate.models.FoodModel
+import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.ktx.Firebase
 
 
 class GivePartfood : AppCompatActivity() {
@@ -43,6 +45,9 @@ class GivePartfood : AppCompatActivity() {
     }
 
     private fun saveFoodData(){
+
+        println("other message")
+        println(FirebaseAuth.getInstance().currentUser?.uid)
         //geting values
 
         val typeFood = selectType.text.toString()
@@ -66,9 +71,12 @@ class GivePartfood : AppCompatActivity() {
             description.error = "please enter description"
         }
 
+
+        val uid = FirebaseAuth.getInstance().currentUser?.uid
+
         val foodId = dbRef.push().key!!
 
-        val foods = FoodModel(foodId, typeFood, quantityFood, descriptionFood)
+        val foods = FoodModel(foodId, typeFood, quantityFood, descriptionFood,uid)
 
         dbRef.child(foodId).setValue(foods)
             .addOnCompleteListener {
