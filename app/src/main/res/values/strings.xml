@@ -14,7 +14,7 @@
     <string name="Type">Type</string>
     <string name="GIVE">GIVE</string>
     <string name="sign_in">Sign in</string>
-    <string name="username">Username</string>
+    <string name="username">Email</string>
     <string name="password">Password</string>
     <string name="login">LOGIN</string>
     <string name="forgot_password">Forgot password?</string>

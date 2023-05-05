@@ -54,7 +54,7 @@
             android:name=".Register"
             android:exported="false" />
         <activity
-            android:name=".Register2"
+            android:name=".RegisterAsIndividual"
             android:exported="false" />
         <activity
             android:name=".Register3"

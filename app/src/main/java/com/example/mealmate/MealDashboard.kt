@@ -9,12 +9,14 @@ class MealDashboard : AppCompatActivity() {
 
     private lateinit var iHaveExtraBtn: Button
     private lateinit var doYouHaveExtraBtn: Button
+    private lateinit var btnLogout: Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meal_dashboard)
 
         iHaveExtraBtn = findViewById(R.id.iHaveExtraBtn)
         doYouHaveExtraBtn = findViewById(R.id.doYouHaveExtraBtn)
+        btnLogout = findViewById(R.id.btnLogout)
 
         iHaveExtraBtn.setOnClickListener {
             val intent = Intent(this, GivePartFood::class.java)
@@ -24,6 +26,10 @@ class MealDashboard : AppCompatActivity() {
         doYouHaveExtraBtn.setOnClickListener {
             val intent = Intent(this,FetchingFood::class.java)
             startActivity(intent)
+        }
+
+        btnLogout.setOnClickListener {
+
         }
     }
 }
