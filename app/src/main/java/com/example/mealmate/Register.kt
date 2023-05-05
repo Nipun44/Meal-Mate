@@ -17,7 +17,7 @@ class Register : AppCompatActivity() {
         orgReg = findViewById(R.id.reg_org_btn)
 
         indReg.setOnClickListener {
-            val intent = Intent(this,Register2::class.java)
+            val intent = Intent(this,RegisterAsIndividual::class.java)
             startActivity(intent)
         }
 
