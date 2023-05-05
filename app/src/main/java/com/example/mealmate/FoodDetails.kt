@@ -109,7 +109,7 @@ class FoodDetails : AppCompatActivity() {
 
 
         //methanata foodtype eke type damai
-        mDialog.setTitle("Updating $etFoodType Record")
+        mDialog.setTitle("Update")
 
         val alertDialog = mDialog.create()
         alertDialog.show()
