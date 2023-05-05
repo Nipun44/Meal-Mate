@@ -12,6 +12,9 @@
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
+            android:name=".noticeDetails"
+            android:exported="false" />
+        <activity
             android:name=".notice_single"
             android:exported="false" />
         <activity
@@ -22,7 +25,7 @@
             android:exported="false" />
         <activity
             android:name=".FetchingFood"
-            android:exported="false"></activity> <!-- <activity -->
+            android:exported="false" /> <!-- <activity -->
         <!-- android:name=".foodList" -->
         <!-- android:exported="false" /> -->
         <!-- <activity -->
@@ -85,5 +88,3 @@
     </application>
 
 </manifest>
-<!--    listNotices-->
-<!--    addNotice-->

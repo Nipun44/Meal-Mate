@@ -1,6 +1,7 @@
 package com.example.mealmate
 
 import NoticeAdapter
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -51,6 +52,20 @@ class listNotices : AppCompatActivity() {
                     }
                     val mAdaptor = NoticeAdapter(noticeList)
                     noticeRecycleView.adapter = mAdaptor
+
+                    mAdaptor.setOnItemClickListener(object : NoticeAdapter.onItemClickListener{
+                        override fun onItemClick(position: Int) {
+                            val intent = Intent(this@listNotices, noticeDetails::class.java)
+
+                            intent.putExtra("nDate", noticeList[position].nDate)
+                            intent.putExtra("nTopic", noticeList[position].nTopic)
+                            intent.putExtra("nPlace", noticeList[position].nPlace)
+                            intent.putExtra("nDescrtption", noticeList[position].nDescrtption)//need to add date
+
+                            startActivity(intent)
+                        }
+
+                    })
 
                     noticeRecycleView.visibility = View.VISIBLE
                     tvNotice.visibility = View.GONE
