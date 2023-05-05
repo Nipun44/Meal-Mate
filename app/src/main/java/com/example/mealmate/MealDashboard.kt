@@ -25,7 +25,7 @@ class MealDashboard : AppCompatActivity() {
         btnUserProfile = findViewById(R.id.btnUserProfile)
 
         iHaveExtraBtn.setOnClickListener {
-            val intent = Intent(this, GivePartFood::class.java)
+            val intent = Intent(this, GivePartfood::class.java)
             startActivity(intent)
         }
 
