@@ -37,14 +37,15 @@ class noticeDetails : AppCompatActivity() {
             )
         }
 
-        btnDelete.setOnClickListener {
+        btnDelete.setOnClickListener{
             val builder = AlertDialog.Builder(this)
             builder.setTitle("Confirm Deletion")
-            builder.setMessage("Are you sure you want to delete this record?")
-            builder.setPositiveButton("Yes") { _, _ ->
+            builder.setMessage("Are you sure you want to delete this notice?")
+            builder.setPositiveButton("Delete") { dialog, _ ->
                 deleteRecord(intent.getStringExtra("nID").toString())
+                dialog.dismiss()
             }
-            builder.setNegativeButton("No") { dialog, _ ->
+            builder.setNegativeButton("Cancel") { dialog, _ ->
                 dialog.dismiss()
             }
             val dialog = builder.create()
@@ -55,26 +56,18 @@ class noticeDetails : AppCompatActivity() {
 
     private fun deleteRecord(id: String) {
         val dbRef = FirebaseDatabase.getInstance().getReference("Notices").child(id)
-        val builder = AlertDialog.Builder(this)
-        builder.setTitle("Confirm Deletion")
-        builder.setMessage("Are you sure you want to delete this record?")
-        builder.setPositiveButton("Yes") { _, _ ->
-            dbRef.removeValue().addOnSuccessListener {
-                Toast.makeText(this, "Notice is Successfully Deleted", Toast.LENGTH_LONG).show()
-                val intent = Intent(this, listNotices::class.java)
-                finish()
-                startActivity(intent)
-            }.addOnFailureListener { error ->
-                Toast.makeText(this, "Deleting error is occurred ", Toast.LENGTH_LONG).show()
-            }
-        }
-        builder.setNegativeButton("No") { dialog, _ ->
-            dialog.dismiss()
-        }
-        val dialog = builder.create()
-        dialog.show()
-    }
+        val nTask = dbRef.removeValue()
 
+        nTask.addOnSuccessListener {
+            Toast.makeText(this, "Success ", Toast.LENGTH_LONG).show()
+
+            val intent = Intent(this, listNotices::class.java)
+            finish()
+            startActivity(intent)
+        }.addOnFailureListener { error ->
+            Toast.makeText(this, "Error.Not Deleted ${error.message} ", Toast.LENGTH_LONG).show()
+        }
+    }
 
     private fun initView(){
 //        tvNoticeId = findViewById(R.id.tvNoticeId)
