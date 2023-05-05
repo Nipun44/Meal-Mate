@@ -12,19 +12,17 @@
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
-            android:name=".listNotices"
+            android:name=".notice_single"
             android:exported="false" />
         <activity
-
+            android:name=".addNotice"
+            android:exported="false" />
+        <activity
             android:name=".FoodDetails"
             android:exported="false" />
         <activity
             android:name=".FetchingFood"
-            android:exported="false">
-
-
-
-        </activity> <!-- <activity -->
+            android:exported="false"></activity> <!-- <activity -->
         <!-- android:name=".foodList" -->
         <!-- android:exported="false" /> -->
         <!-- <activity -->
@@ -50,7 +48,7 @@
             android:exported="false" />
         <activity
             android:name=".GivePartfood"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".forgetpassword2"
             android:exported="false" />
@@ -72,17 +70,14 @@
         <activity
             android:name=".Register3"
             android:exported="false" />
-
         <activity
-            android:name=".addNotice"
+            android:name=".listNotices"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
         <activity
             android:name=".MainActivity"
@@ -90,3 +85,5 @@
     </application>
 
 </manifest>
+<!--    listNotices-->
+<!--    addNotice-->
