@@ -6,40 +6,49 @@
     android:padding="10dp">
 
     <EditText
-        android:id="@+id/etFoodType"
+        android:id="@+id/etNoticeTopic"
         android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_height="65dp"
         android:layout_marginTop="20dp"
-
-        android:hint="Food Type"
+        android:hint="Topic"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/etQuantity"
+        android:id="@+id/etNoticePlace"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_height="84dp"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Enter Quantity" />
+        android:hint="Place" />
 
     <EditText
-        android:id="@+id/etDescription"
+        android:id="@+id/etNoticeDate"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_height="135dp"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Enter Description"
+        android:hint="Date"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/etNoticeDescription"
+        android:layout_width="match_parent"
+        android:layout_height="135dp"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:hint="Description"
         android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/btnUpdateData"
-        android:layout_width="162dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:padding="10dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/custom_button"
-        android:text="Update Data" />
+        android:background="@drawable/button"
+        android:text="Update Data"
+        android:textColor="@color/login_input"
+        android:textSize="18sp" />
 
 
 </LinearLayout>

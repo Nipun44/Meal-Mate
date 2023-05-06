@@ -4,16 +4,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FoodDetails">
+    tools:context=".noticeDetails">
+
+    <Button
+        android:id="@+id/btnUpdate1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button"
+        android:text="Update"
+        android:textColor="@color/primary_background_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/btnDelete"
+        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/new_secondary"
+        android:text="Delete"
+        android:textColor="@color/primary_background_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnUpdate1"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="280dp"
+        android:layout_width="406dp"
+        android:layout_height="466dp"
+        android:layout_marginTop="80dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -21,7 +53,7 @@
         <LinearLayout
             android:id="@+id/id_lin"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="58dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
@@ -34,16 +66,17 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/primarybutton">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Food id"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:text=""
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_primary"
+                    android:textSize="18dp" />
 
             </LinearLayout>
 
@@ -53,16 +86,17 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvFoodId"
+                    android:id="@+id/tvNoticeDate"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text=""
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_primary"
 
-                    />
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -73,7 +107,7 @@
         <LinearLayout
             android:id="@+id/contact_lin"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="61dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:orientation="horizontal"
@@ -83,16 +117,17 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/primarybutton">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Food Type"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:text="Topic"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_primary"
+                    android:textSize="18dp" />
 
             </LinearLayout>
 
@@ -102,16 +137,16 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvFoodType"
+                    android:id="@+id/tvNoticeTopic"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text=""
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_secondary"
 
-                    />
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
@@ -121,7 +156,7 @@
         <LinearLayout
 
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="53dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:orientation="horizontal"
@@ -133,19 +168,20 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/primarybutton">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="Quantity"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:layout_gravity="center_horizontal|top"
 
 
-                    />
+                    android:text="Place"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_primary"
+
+
+                    android:textSize="18dp" />
 
             </LinearLayout>
 
@@ -155,16 +191,16 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvFoodQuantity"
+                    android:id="@+id/tvNoticePlace"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="31dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text=""
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_secondary"
 
-                    />
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
@@ -175,7 +211,7 @@
         <LinearLayout
 
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="199dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:orientation="horizontal"
@@ -187,20 +223,21 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/primarybutton">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="top"
 
-                    android:gravity="center"
+
+                    android:gravity="center_horizontal"
                     android:text="Description"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_primary"
 
 
-                    />
+                    android:textSize="18dp" />
 
             </LinearLayout>
 
@@ -210,16 +247,16 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvFoodDescription"
+                    android:id="@+id/tvNoticeDescription"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
+                    android:layout_height="186dp"
+                    android:layout_gravity="top"
+                    android:gravity="top"
                     android:text=""
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_secondary"
 
-                    />
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
@@ -229,40 +266,19 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/btnDelete"
-        android:layout_width="124dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/disable_button"
-        android:padding="10dp"
-        android:text="Delete"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnUpdate"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
-
-    <Button
-        android:id="@+id/btnUpdate"
-        android:layout_width="124dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="80dp"
-        android:background="@drawable/custom_button"
-        android:padding="10dp"
-        android:text="Update"
-        app:layout_constraintEnd_toStartOf="@+id/btnDelete"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="360dp"
-        android:layout_height="300dp"
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="31dp"
+        android:text="@string/notice_single_details_topic"
+        android:textColor="@color/new_secondary"
+        android:textSize="28dp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/food" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
