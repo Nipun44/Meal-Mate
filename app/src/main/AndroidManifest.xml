@@ -20,13 +20,19 @@
         <activity
             android:name=".listNotices"
             android:exported="false" />
+        <activity
+            android:name=".MainDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".allNoticeList"
+            android:exported="false" />
 
         <activity
             android:name=".FetchingFood"
-            android:exported="true" />
-<!--        <activity-->
-<!--            android:name=".SingleItemView"-->
-<!--            android:exported="false" />-->
+            android:exported="false" />
+        <activity
+            android:name=".SingleItemView"
+            android:exported="false" />
         <activity
             android:name=".noticeUpdateDialog"
             android:exported="false" />
@@ -41,9 +47,16 @@
             android:exported="false" />
         <activity
             android:name=".AddLocation"
-            android:exported="false"
+            android:exported="true"
             >
+        <activity
+            android:name=".noticeDash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
 
 
 
@@ -75,6 +88,11 @@
         <activity
             android:name=".GivePartfood"
             android:exported="false">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
 
         </activity>
         <activity
@@ -88,8 +106,12 @@
             android:exported="false" />
         <activity
             android:name=".MealDashboard"
-            android:exported="true">
+            android:exported="false">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
         <activity
             android:name=".Register"
@@ -103,20 +125,10 @@
             android:exported="false" />
         <activity
             android:name=".addNotice"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-
-                        <intent-filter>
-                            <action android:name="android.intent.action.MAIN" />
-
-                            <category android:name="android.intent.category.LAUNCHER" />
-                        </intent-filter>
-
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
