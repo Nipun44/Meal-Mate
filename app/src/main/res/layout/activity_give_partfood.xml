@@ -9,25 +9,6 @@
     tools:context=".GivePartfood">
 
 
-    <EditText
-        android:id="@+id/MyList"
-        android:layout_width="204dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="12dp"
-        android:autofillHints="enter description"
-        android:background="@drawable/sbotton2"
-        android:ems="10"
-        android:text="MyList"
-        android:textAlignment="center"
-        android:inputType="textPersonName"
-        android:paddingLeft="20dp"
-
-        android:paddingRight="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button6" />
-
     <Button
         android:id="@+id/button5"
         android:layout_width="129dp"
