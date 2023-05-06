@@ -43,7 +43,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="406dp"
         android:layout_height="466dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="120dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -93,7 +93,7 @@
                     android:gravity="center"
                     android:text=""
                     android:textAlignment="textStart"
-                    android:textColor="@color/new_primary"
+                    android:textColor="@color/new_secondary"
 
                     android:textSize="24sp"
                     android:textStyle="bold" />
@@ -271,7 +271,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
-        android:layout_marginBottom="31dp"
+        android:layout_marginBottom="60dp"
         android:text="@string/notice_single_details_topic"
         android:textColor="@color/new_secondary"
         android:textSize="28dp"
@@ -279,6 +279,19 @@
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/shareEx"
+        android:layout_width="44dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="74dp"
+
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/baseline_share_24"
+        android:backgroundTint="@color/new_primary"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

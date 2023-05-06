@@ -53,7 +53,7 @@
                     android:layout_height="wrap_content"
                     android:padding="10dp"
                     android:text="Field 1"
-                    android:textColor="@color/black"
+                    android:textColor="@color/new_secondary"
                     android:textSize="20sp" />
 
                 <TextView
@@ -62,7 +62,7 @@
                     android:layout_height="wrap_content"
                     android:padding="10dp"
                     android:text="Field 2"
-                    android:textColor="@color/black"
+                    android:textColor="@color/new_secondary"
                     android:textSize="20sp" />
 
             </LinearLayout>

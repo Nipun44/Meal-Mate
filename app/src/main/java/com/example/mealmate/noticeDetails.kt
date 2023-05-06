@@ -20,6 +20,7 @@ class noticeDetails : AppCompatActivity() {
 
 
     private lateinit var btnUpdate1: Button
+    private lateinit var shareEx: Button
 
     private lateinit var btnDelete: Button
 
@@ -36,6 +37,13 @@ class noticeDetails : AppCompatActivity() {
                 intent.getStringExtra("nTopic").toString()
             )
         }
+        shareEx.setOnClickListener {
+            val shareIntent = Intent(Intent.ACTION_SEND)
+            shareIntent.type = "text/plain"
+            shareIntent.putExtra(Intent.EXTRA_TEXT, "Topic: ${tvNTopic.text}\nDescription: ${tvNDes.text}\nPlace: ${tvNPlace.text}\nDate: ${tvNDate.text}")
+            startActivity(Intent.createChooser(shareIntent, "Share news via"))
+        }
+
 
         btnDelete.setOnClickListener{
             val builder = AlertDialog.Builder(this)
@@ -75,6 +83,7 @@ class noticeDetails : AppCompatActivity() {
         tvNDes = findViewById(R.id.tvNoticeDescription)
         tvNPlace = findViewById(R.id.tvNoticePlace)
         tvNDate = findViewById(R.id.tvNoticeDate)
+        shareEx = findViewById(R.id.shareEx)
 
         btnUpdate1 = findViewById(R.id.btnUpdate1)
         btnDelete = findViewById(R.id.btnDelete)
