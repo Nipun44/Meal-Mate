@@ -141,6 +141,8 @@
     <string name="typeField">Enter Food type</string>
     <string name="foodQuantity">Enter Food Quantity</string>
     <string name="foodDescription">Enter Description</string>
+    <string name="noticedash_topic" />
+    <string name="noticeDTopic">Notice Arena</string>
 
 
 </resources>
