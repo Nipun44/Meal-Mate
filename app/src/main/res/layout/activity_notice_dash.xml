@@ -1,0 +1,98 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg2"
+    tools:context=".noticeDash">
+
+
+    <Button
+        android:id="@+id/btnNoticesList"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginBottom="5dp"
+
+        android:background="@drawable/button"
+        android:backgroundTint="@color/new_secondary"
+        android:text="Notices"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/login_input"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddNotices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.691" />
+
+    <Button
+        android:id="@+id/btnAddNotices"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/new_secondary"
+        android:text="Add"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/login_input"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnMyNotice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnNoticesList" />
+
+    <Button
+        android:id="@+id/btnMyNotice"
+        android:layout_width="180dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="100dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/new_secondary"
+        android:text="My List"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/login_input"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnAddNotices" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="386dp"
+        android:layout_height="364dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnNoticesList"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/noticedashimage" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/noticeDTopic"
+        android:textColor="@color/new_secondary"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

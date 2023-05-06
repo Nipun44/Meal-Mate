@@ -18,9 +18,20 @@
             android:name=".FetchLocation"
             android:exported="false" />
         <activity
+            android:name=".MainDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".allNoticeList"
+            android:exported="false" />
+        <activity
             android:name=".listNotices"
             android:exported="false" />
-
+        <activity
+            android:name=".GivePartfood"
+            android:exported="false" />
+        <activity
+            android:name=".FetchingFood"
+            android:exported="false" />
         <activity
             android:name=".FetchingFood"
             android:exported="true" />
@@ -36,13 +47,18 @@
         <activity
             android:name=".notice_single"
             android:exported="false" />
+
         <activity
+
             android:name=".FoodDetails"
             android:exported="false" />
         <activity
             android:name=".AddLocation"
             android:exported="true"
             >
+        <activity
+            android:name=".noticeDash"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -76,6 +92,9 @@
         <activity
             android:name=".request"
             android:exported="false" />
+        <activity
+            android:name=".FetchingFood"
+            android:exported="false">
         <activity
             android:name=".GivePartfood"
             android:exported="false">
@@ -116,12 +135,10 @@
             android:exported="false" />
         <activity
             android:name=".addNotice"
-            android:exported="false"></activity>
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
-
-        </activity>
+            android:exported="false" />
     </application>
 
 </manifest>
