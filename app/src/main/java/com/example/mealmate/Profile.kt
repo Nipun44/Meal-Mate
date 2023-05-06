@@ -2,6 +2,7 @@ package com.example.mealmate
 
 import android.app.AlertDialog
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -43,6 +44,12 @@ class Profile : AppCompatActivity() {
 
         btnProfileUpdate.setOnClickListener {
             openUpdateDialog(name, contact, email)
+        }
+
+        btnProfileDelete.setOnClickListener {
+            deleteRecord(
+                email
+            )
         }
     }
 
@@ -86,5 +93,20 @@ class Profile : AppCompatActivity() {
             "contact" to contact
         )
         dbRef.document(email).update(user as Map<String, Any>)
+    }
+
+    private fun deleteRecord(email: String) {
+        val dbRef = FirebaseFirestore.getInstance().collection("USERS").document(email)
+        val mTask = dbRef.delete()
+
+        mTask.addOnSuccessListener {
+            Toast.makeText(this, "User profile deleted", Toast.LENGTH_LONG).show()
+
+            val intent = Intent(this, MainActivity::class.java)
+            finish()
+            startActivity(intent)
+        }.addOnFailureListener{ error ->
+            Toast.makeText(this, "Deleting Err ${error.message}", Toast.LENGTH_LONG).show()
+        }
     }
 }

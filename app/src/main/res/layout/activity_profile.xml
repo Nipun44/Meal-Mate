@@ -149,7 +149,7 @@
         android:layout_marginEnd="50dp"
         android:layout_marginBottom="71dp"
         android:background="@drawable/roundedcorner"
-        android:backgroundTint="@color/cancel_btn"
+        android:backgroundTint="@color/new_secondary"
         android:text="Delete Profile"
         android:textAllCaps="false"
         android:textColor="@color/white"

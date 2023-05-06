@@ -142,6 +142,9 @@
     <string name="foodQuantity">Enter Food Quantity</string>
     <string name="foodDescription">Enter Description</string>
     <string name="profile">Profile</string>
+    <string name="dash_app_name">Meal Mate</string>
+    <string name="noticeDTopic">Your topic text here</string>
+    <string name="notice_single_details_topic">Your single details topic text here</string>
 
 
 </resources>
