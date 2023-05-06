@@ -76,7 +76,7 @@
             android:name=".RegisterAsIndividual"
             android:exported="false" />
         <activity
-            android:name=".Register3"
+            android:name=".RegisterAsOrganization"
             android:exported="false" />
 
         <activity
