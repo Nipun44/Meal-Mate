@@ -98,7 +98,7 @@ class noticeDetails : AppCompatActivity() {
         val etNoticePlace = nDialogView.findViewById<EditText>(R.id.etNoticePlace)
         //date
         val etNoticeDate = nDialogView.findViewById<EditText>(R.id.etNoticeDate)
-        val btnUpdateData = nDialogView.findViewById<Button>(R.id.btnUpdateData)
+        val btnUpdateData = nDialogView.findViewById<Button>(R.id.btnLocUpdateData)
 
         etNoticeTopic.setText(intent.getStringExtra("nTopic").toString())
         etNoticeDescription.setText(intent.getStringExtra("nDescrtption").toString())

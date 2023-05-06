@@ -55,6 +55,7 @@ class FetchLocation : AppCompatActivity() {
                         override fun onItemClick(position: Int) {
 
                             var intent = Intent(this@FetchLocation,LocationDetails::class.java)
+
                             intent.putExtra("Location id",locList[position].locationId)
                             intent.putExtra("Location Name",locList[position].locationName)
                             intent.putExtra("Address",locList[position].LocatoinAddress)

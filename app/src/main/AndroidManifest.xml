@@ -12,6 +12,15 @@
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
+            android:name=".LocationDashboard"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name=".LocationDetails"
             android:exported="false" />
         <activity
@@ -19,7 +28,8 @@
             android:exported="false" />
         <activity
             android:name=".FetchLocation"
-            android:exported="false" />
+            android:exported="false"/>
+
         <activity
             android:name=".listNotices"
             android:exported="false" />
@@ -43,8 +53,7 @@
             android:exported="false" />
         <activity
             android:name=".AddLocation"
-            android:exported="false"/>
-        <!-- <activity -->
+            android:exported="false" /> <!-- <activity -->
         <!-- android:name=".foodList" -->
         <!-- android:exported="false" /> -->
         <!-- <activity -->
@@ -114,7 +123,7 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>
