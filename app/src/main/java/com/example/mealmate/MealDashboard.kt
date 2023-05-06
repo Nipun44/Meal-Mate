@@ -15,6 +15,8 @@ class MealDashboard : AppCompatActivity() {
     private lateinit var doYouHaveExtraBtn: Button
     private lateinit var btnLogout: Button
     private lateinit var btnUserProfile: Button
+    private lateinit var myList:Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meal_dashboard)
@@ -23,6 +25,8 @@ class MealDashboard : AppCompatActivity() {
         doYouHaveExtraBtn = findViewById(R.id.doYouHaveExtraBtn)
         btnLogout = findViewById(R.id.btnLogout)
         btnUserProfile = findViewById(R.id.btnUserProfile)
+        myList = findViewById(R.id.myList)
+
 
         iHaveExtraBtn.setOnClickListener {
             val intent = Intent(this, GivePartfood::class.java)
@@ -42,6 +46,15 @@ class MealDashboard : AppCompatActivity() {
             val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
+
+        myList.setOnClickListener{
+            val intent = Intent(this,fetchingSingleFood::class.java)
+            startActivity(intent)
+        }
+
+
+
+
 
         val sharedPref = applicationContext.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
         val isLogin = sharedPref.getString("email", "1")

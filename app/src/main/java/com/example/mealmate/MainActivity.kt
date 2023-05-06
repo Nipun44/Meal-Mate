@@ -8,6 +8,7 @@ import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
 
+
 class MainActivity : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
 
