@@ -144,6 +144,7 @@
     <string name="noticedash_topic" />
     <string name="noticeDTopic">Notice Arena</string>
     <string name="notice_single_details_topic">Details</string>
+    <string name="dash_app_name">Meal Mate</string>
 
 
 </resources>
