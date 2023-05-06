@@ -1,5 +1,6 @@
 package com.example.mealmate
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -49,6 +50,21 @@ class FetchLocation : AppCompatActivity() {
                     }
                     val lAdapter = LocationAdapter(locList)
                     locRecyclerView.adapter = lAdapter
+
+                    lAdapter.setOnItemClickListener(object : LocationAdapter.onItemClickListener{
+                        override fun onItemClick(position: Int) {
+
+                            var intent = Intent(this@FetchLocation,LocationDetails::class.java)
+                            intent.putExtra("Location id",locList[position].locationId)
+                            intent.putExtra("Location Name",locList[position].locationName)
+                            intent.putExtra("Address",locList[position].LocatoinAddress)
+                            intent.putExtra("Description",locList[position].locationDescription)
+
+                            startActivity(intent)
+
+                        }
+
+                    })
 
                     locRecyclerView.visibility = View.VISIBLE
                     tvLoadingData.visibility = View.GONE
