@@ -16,7 +16,7 @@
             android:name=".FetchLocation"
             android:exported="false" />
         <activity
-            android:name=".AddLocation"
+            android:name=".listNotices"
             android:exported="false" />
         <activity
             android:name=".SingleItemView"
@@ -36,7 +36,7 @@
             android:name=".FoodDetails"
             android:exported="false" />
         <activity
-            android:name=".listNotices"
+            android:name=".AddLocation"
             android:exported="true"
             >
             <intent-filter>
