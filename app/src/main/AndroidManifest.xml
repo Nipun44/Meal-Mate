@@ -15,8 +15,18 @@
             android:name=".fetchingSingleFood"
             android:exported="false" />
         <activity
+            android:name=".FetchLocation"
+            android:exported="false" />
+        <activity
+            android:name=".listNotices"
+            android:exported="false" />
+
+        <activity
             android:name=".FetchingFood"
             android:exported="true" />
+        <activity
+            android:name=".SingleItemView"
+            android:exported="false" />
         <activity
             android:name=".noticeUpdateDialog"
             android:exported="false" />
@@ -30,8 +40,19 @@
             android:name=".FoodDetails"
             android:exported="false" />
         <activity
-            android:name=".listNotices"
-            android:exported="false"></activity> <!-- <activity -->
+            android:name=".AddLocation"
+            android:exported="true"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+
+
+        </activity> <!-- <activity -->
         <!-- android:name=".foodList" -->
         <!-- android:exported="false" /> -->
         <!-- <activity -->
@@ -58,13 +79,11 @@
         <activity
             android:name=".GivePartfood"
             android:exported="false">
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
 
         </activity>
         <activity
@@ -100,12 +119,7 @@
             android:exported="false"></activity>
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            android:exported="false">
 
         </activity>
     </application>
