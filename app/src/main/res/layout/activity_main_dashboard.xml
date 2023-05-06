@@ -9,9 +9,9 @@
     tools:context=".MainDashboard">
 
     <ImageView
-        android:id="@+id/imageView17"
-        android:layout_width="61dp"
-        android:layout_height="101dp"
+        android:id="@+id/ProfileButton"
+        android:layout_width="60dp"
+        android:layout_height="86dp"
         android:layout_marginStart="332dp"
         android:layout_marginTop="4dp"
         android:layout_marginEnd="6dp"
@@ -50,25 +50,25 @@
         app:srcCompat="@drawable/food" />
 
     <ImageView
-        android:id="@+id/imageView41"
+        android:id="@+id/MealButton"
         android:layout_width="151dp"
         android:layout_height="133dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="24dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView40"
+        app:layout_constraintStart_toEndOf="@+id/ShareButton"
         app:layout_constraintTop_toBottomOf="@+id/imageView18"
         app:srcCompat="@drawable/i2"
         android:elevation="4dp"
         android:background="@drawable/shadow"/>
 
     <ImageView
-        android:id="@+id/imageView40"
+        android:id="@+id/ShareButton"
         android:layout_width="151dp"
         android:layout_height="133dp"
         android:layout_marginStart="47dp"
         android:layout_marginTop="24dp"
         android:layout_marginEnd="24dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView41"
+        app:layout_constraintEnd_toStartOf="@+id/MealButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView18"
         app:srcCompat="@drawable/i3"
@@ -77,36 +77,36 @@
 
 
     <ImageView
-        android:id="@+id/imageView44"
+        android:id="@+id/LocationButton"
         android:layout_width="121dp"
         android:layout_height="104dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="28dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView41"
+        app:layout_constraintTop_toBottomOf="@+id/MealButton"
         app:srcCompat="@drawable/i1"
         android:elevation="4dp"
         android:background="@drawable/shadow"/>
 
     <ImageView
-        android:id="@+id/imageView43"
+        android:id="@+id/MyListButton"
         android:layout_width="121dp"
         android:layout_height="104dp"
         android:layout_marginTop="30dp"
-        app:layout_constraintStart_toEndOf="@+id/imageView42"
-        app:layout_constraintTop_toBottomOf="@+id/imageView41"
+        app:layout_constraintStart_toEndOf="@+id/NoticeButton"
+        app:layout_constraintTop_toBottomOf="@+id/MealButton"
         app:srcCompat="@drawable/i4"
         android:elevation="4dp"
         android:background="@drawable/shadow"/>
 
     <ImageView
-        android:id="@+id/imageView42"
+        android:id="@+id/NoticeButton"
         android:layout_width="121dp"
         android:layout_height="104dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView40"
+        app:layout_constraintTop_toBottomOf="@+id/ShareButton"
         app:srcCompat="@drawable/i5"
         android:elevation="4dp"
         android:background="@drawable/shadow"/>

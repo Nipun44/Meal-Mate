@@ -41,7 +41,7 @@ class MainActivity : AppCompatActivity() {
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
                             Toast.makeText(this, "Login Successful", Toast.LENGTH_LONG).show()
-                            val intent = Intent(this, MealDashboard::class.java)
+                            val intent = Intent(this, MainDashboard::class.java)
                            intent.putExtra("email",email)
                             startActivity(intent)
                             finish()
