@@ -1,16 +1,19 @@
 package com.example.mealmate
 
+import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import com.example.mealmate.models.FoodModel
+//import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.ktx.Firebase
 
 
 class GivePartfood : AppCompatActivity() {
 
-    private lateinit var selectType: TextView
+    private lateinit var selectType: EditText
     private lateinit var quantity: EditText
     private lateinit var description: EditText
     //    private lateinit var anonymous: RadioButton
@@ -43,6 +46,9 @@ class GivePartfood : AppCompatActivity() {
     }
 
     private fun saveFoodData(){
+
+//        println("other message")
+//        println(FirebaseAuth.getInstance().currentUser?.uid)
         //geting values
 
         val typeFood = selectType.text.toString()
@@ -66,9 +72,15 @@ class GivePartfood : AppCompatActivity() {
             description.error = "please enter description"
         }
 
+
+        val sharedPref = applicationContext.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
+        val email = sharedPref.getString("Email", "").toString()
+//        val uid = FirebaseAuth.getInstance().currentUser?.uid
+
         val foodId = dbRef.push().key!!
 
-        val foods = FoodModel(foodId, typeFood, quantityFood, descriptionFood)
+//        val foods = FoodModel(foodId, typeFood, quantityFood, descriptionFood,uid)
+        val foods = FoodModel(foodId, typeFood, quantityFood, descriptionFood,email)
 
         dbRef.child(foodId).setValue(foods)
             .addOnCompleteListener {
@@ -77,6 +89,7 @@ class GivePartfood : AppCompatActivity() {
 
                 quantity.text.clear()
                 description.text.clear()
+                selectType.text.clear()
 
 
 

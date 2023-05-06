@@ -9,34 +9,52 @@
     tools:context=".GivePartfood">
 
 
+    <EditText
+        android:id="@+id/MyList"
+        android:layout_width="204dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:autofillHints="enter description"
+        android:background="@drawable/sbotton2"
+        android:ems="10"
+        android:text="MyList"
+        android:textAlignment="center"
+        android:inputType="textPersonName"
+        android:paddingLeft="20dp"
+
+        android:paddingRight="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button6" />
 
     <Button
         android:id="@+id/button5"
         android:layout_width="129dp"
         android:layout_height="48dp"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="52dp"
         android:background="@drawable/custom_button"
-        android:backgroundTint="@color/secondary"
+        android:backgroundTint="@color/new_primary"
         android:padding="10dp"
         android:text="@string/confirm"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descriptinfeld"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptinfeld" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="129dp"
         android:layout_height="48dp"
 
-        android:layout_marginStart="60dp"
+        android:layout_marginTop="48dp"
         android:background="@drawable/button"
         android:backgroundTint="@color/disabled_button_color"
         android:padding="10dp"
         android:text="@string/back"
-        app:layout_constraintStart_toEndOf="@+id/button5"
-        app:layout_constraintTop_toTopOf="@+id/button5" />
+        app:layout_constraintEnd_toStartOf="@+id/button5"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptinfeld" />
 
     <TextView
         android:id="@+id/give"
@@ -61,7 +79,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:text="@string/select_type"
-        android:textColor="@color/black"
+        android:textColor="@color/new_secondary"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/give" />
@@ -103,7 +121,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="20dp"
         android:text="@string/quantity"
-        android:textColor="@color/black"
+        android:textColor="@color/new_secondary"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/typeField" />
@@ -134,7 +152,7 @@
 
         android:layout_marginTop="32dp"
         android:text="@string/description"
-        android:textColor="@color/black"
+        android:textColor="@color/new_secondary"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
