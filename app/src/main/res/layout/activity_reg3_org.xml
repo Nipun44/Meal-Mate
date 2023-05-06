@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/secondary"
     android:backgroundTint="@color/white"
-    tools:context=".Register2">
+    tools:context=".Register3">
 
     <TextView
         android:id="@+id/textView"
@@ -19,13 +19,13 @@
         android:textColor="@color/new_primary"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edtPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edtPersonName"
         android:layout_width="304dp"
         android:layout_height="56dp"
         android:layout_marginTop="43dp"
@@ -43,7 +43,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/edtEmail"
         android:layout_width="304dp"
         android:layout_height="56dp"
         android:layout_marginTop="21dp"
@@ -58,10 +58,10 @@
         android:textColor="@color/secondary_color_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/edtPersonName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/edtContactNo"
         android:layout_width="304dp"
         android:layout_height="56dp"
         android:layout_marginTop="24dp"
@@ -76,10 +76,10 @@
         android:textColor="@color/secondary_color_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtEmail" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/edtIdNum"
         android:layout_width="304dp"
         android:layout_height="56dp"
         android:layout_marginTop="19dp"
@@ -94,11 +94,11 @@
         android:textColor="@color/secondary_color_btn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/edtContactNo" />
 
 
     <TextView
-        android:id="@+id/textView27"
+        android:id="@+id/already_have_account"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="128dp"
@@ -109,22 +109,23 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.432"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintTop_toBottomOf="@+id/edtIdNum"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnSignUpIndReg"
         android:layout_width="286dp"
         android:layout_height="49dp"
         android:background="@drawable/button"
-        android:text="@string/sign_up"
+        android:text="Sign Up"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView27"
+        app:layout_constraintBottom_toTopOf="@+id/already_have_account"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        app:layout_constraintVertical_bias="0.53" />
+        app:layout_constraintTop_toBottomOf="@+id/edtIdNum"
+        app:layout_constraintVertical_bias="0.53"
+        android:textAllCaps="false"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

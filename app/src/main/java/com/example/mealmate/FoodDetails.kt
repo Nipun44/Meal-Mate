@@ -23,6 +23,8 @@ class FoodDetails : AppCompatActivity() {
     private lateinit var btnUpdate: Button
     private lateinit var btnDelete: Button
 
+    private lateinit var MyList:Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_food_details)
@@ -44,6 +46,10 @@ class FoodDetails : AppCompatActivity() {
                 intent.getStringExtra("foodId").toString()
             )
         }
+
+
+
+
     }
 
     private fun deleteRecord(
