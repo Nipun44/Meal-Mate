@@ -18,26 +18,16 @@
             android:name=".FetchLocation"
             android:exported="false" />
         <activity
-            android:name=".MainDashboard"
-            android:exported="false" />
-        <activity
-            android:name=".allNoticeList"
-            android:exported="false" />
-        <activity
             android:name=".listNotices"
             android:exported="false" />
         <activity
-            android:name=".GivePartfood"
+            android:name=".MainDashboard"
             android:exported="false" />
+
         <activity
             android:name=".FetchingFood"
             android:exported="false" />
-        <activity
-            android:name=".FetchingFood"
-            android:exported="true" />
-        <activity
-            android:name=".SingleItemView"
-            android:exported="false" />
+
         <activity
             android:name=".noticeUpdateDialog"
             android:exported="false" />
@@ -47,33 +37,19 @@
         <activity
             android:name=".notice_single"
             android:exported="false" />
-
         <activity
-
             android:name=".FoodDetails"
             android:exported="false" />
         <activity
             android:name=".AddLocation"
-            android:exported="true"
-            >
+            android:exported="false">
+
+        </activity>
+
         <activity
             android:name=".noticeDash"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-
-
-
-
-        </activity> <!-- <activity -->
-        <!-- android:name=".foodList" -->
-        <!-- android:exported="false" /> -->
-        <!-- <activity -->
-        <!-- android:name=".GiveFood" -->
-        <!-- android:exported="false" /> -->
+            android:exported="false">
+        </activity>
         <activity
             android:name=".TermsAndConditions"
             android:exported="false" />
@@ -93,16 +69,9 @@
             android:name=".request"
             android:exported="false" />
         <activity
-            android:name=".FetchingFood"
-            android:exported="false">
-        <activity
             android:name=".GivePartfood"
             android:exported="false">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
 
         </activity>
         <activity
@@ -117,11 +86,7 @@
         <activity
             android:name=".MealDashboard"
             android:exported="false">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
         </activity>
         <activity
             android:name=".Register"
@@ -138,7 +103,13 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
     </application>
 
 </manifest>
