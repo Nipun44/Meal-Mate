@@ -143,6 +143,7 @@
     <string name="foodDescription">Enter Description</string>
     <string name="noticedash_topic" />
     <string name="noticeDTopic">Notice Arena</string>
+    <string name="notice_single_details_topic">Details</string>
 
 
 </resources>

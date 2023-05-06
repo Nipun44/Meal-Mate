@@ -39,7 +39,7 @@ class noticeDetails : AppCompatActivity() {
 
         btnDelete.setOnClickListener{
             val builder = AlertDialog.Builder(this)
-            builder.setTitle("Confirm Deletion")
+            builder.setTitle("Confirm Delete")
             builder.setMessage("Are you sure you want to delete this notice?")
             builder.setPositiveButton("Delete") { dialog, _ ->
                 deleteRecord(intent.getStringExtra("nID").toString())

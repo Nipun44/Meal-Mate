@@ -65,7 +65,7 @@ class addNotice : AppCompatActivity() {
 
         dbRef.child(noticeID).setValue(notice)
             .addOnCompleteListener {
-                Toast.makeText(this, "Data inserted Successfully", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Add Successfully", Toast.LENGTH_LONG).show()
 
 
                 notice_topic.text.clear()

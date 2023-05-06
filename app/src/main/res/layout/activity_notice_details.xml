@@ -10,8 +10,13 @@
         android:id="@+id/btnUpdate1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
         android:layout_marginTop="28dp"
+        android:background="@drawable/button"
         android:text="Update"
+        android:textColor="@color/primary_background_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/btnDelete"
         app:layout_constraintHorizontal_bias="0.451"
         app:layout_constraintStart_toStartOf="parent"
@@ -22,27 +27,33 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
-        android:layout_marginEnd="68dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/new_secondary"
         android:text="Delete"
+        android:textColor="@color/primary_background_color"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnUpdate"
+        app:layout_constraintStart_toEndOf="@+id/btnUpdate1"
         app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:layout_width="406dp"
+        android:layout_height="466dp"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
-        android:orientation="vertical">
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
 
         <LinearLayout
             android:id="@+id/id_lin"
             android:layout_width="match_parent"
-            android:layout_height="30dp"
+            android:layout_height="58dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
@@ -62,9 +73,10 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Date"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:text=""
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_primary"
+                    android:textSize="18dp" />
 
             </LinearLayout>
 
@@ -80,10 +92,11 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text=""
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_primary"
 
-                    />
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -94,7 +107,7 @@
         <LinearLayout
             android:id="@+id/contact_lin"
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="61dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:orientation="horizontal"
@@ -112,8 +125,9 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text="Topic"
-                    android:textColor="@color/black"
-                    android:textSize="15sp" />
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_primary"
+                    android:textSize="18dp" />
 
             </LinearLayout>
 
@@ -129,10 +143,10 @@
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text=""
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_secondary"
 
-                    />
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
@@ -142,7 +156,7 @@
         <LinearLayout
 
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="53dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:orientation="horizontal"
@@ -159,14 +173,15 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
+                    android:layout_gravity="center_horizontal|top"
+
+
                     android:text="Place"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_primary"
 
 
-                    />
+                    android:textSize="18dp" />
 
             </LinearLayout>
 
@@ -178,14 +193,14 @@
                 <TextView
                     android:id="@+id/tvNoticePlace"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_height="31dp"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text=""
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_secondary"
 
-                    />
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
@@ -196,7 +211,7 @@
         <LinearLayout
 
             android:layout_width="match_parent"
-            android:layout_height="40dp"
+            android:layout_height="199dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:orientation="horizontal"
@@ -213,15 +228,16 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
+                    android:layout_gravity="top"
 
-                    android:gravity="center"
+
+                    android:gravity="center_horizontal"
                     android:text="Description"
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_primary"
 
 
-                    />
+                    android:textSize="18dp" />
 
             </LinearLayout>
 
@@ -233,14 +249,14 @@
                 <TextView
                     android:id="@+id/tvNoticeDescription"
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
+                    android:layout_height="186dp"
+                    android:layout_gravity="top"
+                    android:gravity="top"
                     android:text=""
-                    android:textColor="@color/black"
-                    android:textSize="15sp"
+                    android:textAlignment="textStart"
+                    android:textColor="@color/new_secondary"
 
-                    />
+                    android:textSize="18sp" />
 
             </LinearLayout>
 
@@ -249,5 +265,20 @@
 
 
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView28"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="31dp"
+        android:text="@string/notice_single_details_topic"
+        android:textColor="@color/new_secondary"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

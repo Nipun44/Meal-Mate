@@ -38,7 +38,7 @@ class noticeDash : AppCompatActivity() {
 
 
         btnMyNotice.setOnClickListener {
-            val intent = Intent(this, Profile::class.java)
+            val intent = Intent(this, listNotices::class.java)
             startActivity(intent)
         }
 
