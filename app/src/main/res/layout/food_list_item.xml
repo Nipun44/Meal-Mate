@@ -1,40 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardElevation="8dp"
-    app:cardCornerRadius="8dp"
+    app:cardCornerRadius="15dp"
     android:layout_margin="8dp">
 
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:padding="16dp"
         android:layout_gravity="center"
-        android:orientation="vertical">
+        android:orientation="horizontal"
+        android:background="@color/primarybutton"
 
-        <LinearLayout
+        >
+
+        <TextView
+            android:id="@+id/tvFoodName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_vertical"
-            android:orientation="horizontal">
+            android:text="Food Name"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="@color/new_secondary"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:padding="8dp"
+       />
 
-            <TextView
-                android:id="@+id/tvFoodName"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="food Name"
-                android:layout_gravity="center"
-                android:gravity="center"
-                android:textColor="@color/black"
-                android:textSize="30sp"
-                android:textStyle="bold"/>
-
-
-        </LinearLayout>
 
     </LinearLayout>
+
+
+
 
 </androidx.cardview.widget.CardView>

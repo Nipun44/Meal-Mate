@@ -8,11 +8,12 @@ import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
 
 
-class GivePartFood : AppCompatActivity() {
+class GivePartfood : AppCompatActivity() {
 
-    private lateinit var selectType: Spinner
+    private lateinit var selectType: TextView
     private lateinit var quantity: EditText
     private lateinit var description: EditText
+    //    private lateinit var anonymous: RadioButton
     private lateinit var btnConfirm: Button
     private lateinit var btnBack: Button
 
@@ -22,10 +23,10 @@ class GivePartFood : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_give_partfood)
 
-        selectType = findViewById(R.id.spinner)
+        selectType = findViewById(R.id.typeField)
         quantity = findViewById(R.id.quantityfeeld)
         description = findViewById(R.id.descriptinfeld)
-//        anonymous = findViewById(R.id.radio_pirates)
+
         btnConfirm = findViewById(R.id.button5)
         btnBack = findViewById(R.id.button6)
 
@@ -35,17 +36,26 @@ class GivePartFood : AppCompatActivity() {
             saveFoodData()
         }
 
+
+
+
+
     }
 
     private fun saveFoodData(){
         //geting values
-        val typeFood = selectType.selectedItem.toString()
+
+        val typeFood = selectType.text.toString()
         val quantityFood = quantity.text.toString()
         val descriptionFood = description.text.toString()
+//        val anonymousFood = anonymous.text.toString()
+
+
+
 
 
         if(typeFood.isEmpty()){
-            selectType.prompt = "please enter type"
+            selectType.error = "please enter type"
         }
 
         if(quantityFood.isEmpty()){

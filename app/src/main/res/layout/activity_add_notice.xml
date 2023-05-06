@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".addNotice">
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="@string/notice_title"
+        android:textAlignment="center"
+        android:textColor="@color/new_primary"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/notice_des"
+        android:layout_width="304dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/sbutton"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName"
+        android:textColor="@color/secondary_color_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice_topic" />
+
+    <Button
+        android:id="@+id/notice_submit"
+        android:layout_width="305dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginBottom="18dp"
+        android:background="@drawable/button"
+        android:text="@string/notice_publish_button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/notice_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice_place" />
+
+    <Button
+        android:id="@+id/notice_back"
+        android:layout_width="305dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="220dp"
+        android:layout_marginBottom="57dp"
+        android:background="@drawable/button"
+        android:backgroundTint="@color/new_secondary"
+        android:text="@string/notice_back_button"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice_place" />
+
+    <EditText
+        android:id="@+id/notice_topic"
+        android:layout_width="304dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/sbutton"
+        android:ems="10"
+        android:hint="Topic"
+        android:inputType="textPersonName"
+        android:textColor="@color/secondary_color_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+    <EditText
+        android:id="@+id/notice_date"
+        android:layout_width="304dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/sbutton"
+        android:ems="10"
+        android:hint="Select Date"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice_place" />
+
+    <EditText
+        android:id="@+id/notice_place"
+        android:layout_width="304dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/sbutton"
+        android:ems="10"
+        android:hint="Place"
+        android:inputType="textPersonName"
+        android:textColor="@color/secondary_color_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/notice_des" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

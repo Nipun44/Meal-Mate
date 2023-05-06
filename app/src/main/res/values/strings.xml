@@ -19,8 +19,8 @@
     <string name="login">LOGIN</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="or_sign_in_with">or sign in with</string>
-    <string name="i_have_extras">I Have Extras</string>
-    <string name="select_type">Select Type:</string>
+    <string name="i_have_extras">Let\'s Share</string>
+    <string name="select_type">Enter Type:</string>
     <string name="quantity">Quantity:</string>
     <string name="description">Description:</string>
     <string name="enter_description">Enter description</string>
@@ -132,9 +132,15 @@
     <string name="addpalce_topic">Add Place</string>
     <string name="signup_dont_haveacc">Don\'t have an account</string>
     <string name="app_name_login">Meal Mate</string>
-    <string name="reg_alreadyhave">Already have an account?</string>
+    <string name="reg_alreadyhave">Already have an account</string>
     <string name="mealmateicon">mealMateIcon</string>
-    <string name="SignUp">Sign Up</string>
+    <string name="sign_up">SignUp</string>
+    <string name="notice_title">Add Notice</string>
+    <string name="notice_publish_button">Publish</string>
+    <string name="notice_back_button">Back</string>
+    <string name="typeField">Enter Food type</string>
+    <string name="foodQuantity">Enter Food Quantity</string>
+    <string name="foodDescription">Enter Description</string>
 
 
 </resources>

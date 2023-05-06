@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/secondary"
     android:backgroundTint="@color/white"
-    tools:context=".Register3">
+    tools:context=".Register2">
 
     <TextView
         android:id="@+id/textView"
@@ -98,7 +98,7 @@
 
 
     <TextView
-        android:id="@+id/already_have_account"
+        android:id="@+id/textView27"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="128dp"
@@ -117,15 +117,14 @@
         android:layout_width="286dp"
         android:layout_height="49dp"
         android:background="@drawable/button"
-        android:text="Sign Up"
+        android:text="@string/sign_up"
         android:textColor="@color/white"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/already_have_account"
+        app:layout_constraintBottom_toTopOf="@+id/textView27"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
-        app:layout_constraintVertical_bias="0.53"
-        android:textAllCaps="false"/>
+        app:layout_constraintVertical_bias="0.53" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

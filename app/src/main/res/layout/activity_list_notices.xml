@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".FetchingFood">
+    tools:context=".listNotices">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvFood"
+        android:id="@+id/rvNotice"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="1dp"
@@ -20,10 +20,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0"
-        tools:listitem="@layout/food_list_item" />
+        tools:listitem="@layout/activity_notice_single" />
 
     <TextView
-        android:id="@+id/tvLoadingData"
+        android:id="@+id/tvLoadingNotice"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Loading Data....."
@@ -35,6 +35,5 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
