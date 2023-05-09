@@ -26,16 +26,12 @@
         <activity
             android:name=".listNotices"
             android:exported="false" />
-        <activity
-            android:name=".MainDashboard"
-            android:exported="false" />
+
 
         <activity
             android:name=".FetchingFood"
             android:exported="false" />
-        <activity
-            android:name=".FetchingFood"
-            android:exported="true" />
+
         <activity
             android:name=".SingleItemView"
             android:exported="false" />
