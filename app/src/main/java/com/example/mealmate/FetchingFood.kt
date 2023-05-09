@@ -92,6 +92,8 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -105,6 +107,7 @@ class FetchingFood : AppCompatActivity() {
     private lateinit var tvLoadingData: TextView
     private lateinit var foodList: ArrayList<FoodModel>
     private lateinit var dbRef: DatabaseReference
+    private lateinit var backBtn: ImageView
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -117,8 +120,19 @@ class FetchingFood : AppCompatActivity() {
         tvLoadingData = findViewById(R.id.tvLoadingData)
 
         foodList = arrayListOf<FoodModel>()
+        backBtn = findViewById(R.id.backBtn)
 
         getFoodsData()
+
+
+
+        backBtn.setOnClickListener {
+            val intent = Intent(this,MainDashboard::class.java)
+            startActivity(intent)
+        }
+
+
+
     }
     private fun getFoodsData() {
         foodRecyclerView.visibility = View.GONE

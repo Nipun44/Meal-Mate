@@ -1,6 +1,7 @@
 package com.example.mealmate
 
 import android.content.Context
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
@@ -18,9 +19,10 @@ class GivePartfood : AppCompatActivity() {
     private lateinit var description: EditText
     //    private lateinit var anonymous: RadioButton
     private lateinit var btnConfirm: Button
-    private lateinit var btnBack: Button
+    private lateinit var button6: Button
 
     private lateinit var dbRef: DatabaseReference
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,12 +33,18 @@ class GivePartfood : AppCompatActivity() {
         description = findViewById(R.id.descriptinfeld)
 
         btnConfirm = findViewById(R.id.button5)
-        btnBack = findViewById(R.id.button6)
+        button6 = findViewById(R.id.button6)
 
         dbRef = FirebaseDatabase.getInstance().getReference("Foods")
 
         btnConfirm.setOnClickListener {
             saveFoodData()
+        }
+
+
+        button6.setOnClickListener {
+            val intent = Intent(this,MainDashboard::class.java)
+            startActivity(intent)
         }
 
 
