@@ -37,9 +37,19 @@ class LocationDetails : AppCompatActivity() {
         }
 
         btnDelete.setOnClickListener {
-            deleteRecord(
-                intent.getStringExtra("Location id").toString()
-            )
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Confirm Delete")
+            builder.setMessage("Are you sure you want to delete this notice?")
+            builder.setPositiveButton("Delete") { dialog, _ ->
+                deleteRecord(intent.getStringExtra("Location id").toString())
+                dialog.dismiss()
+            }
+            builder.setNegativeButton("Cancel") { dialog, _ ->
+                dialog.dismiss()
+            }
+            val dialog = builder.create()
+            dialog.show()
+
         }
 
     }
