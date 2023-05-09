@@ -6,40 +6,40 @@
     android:padding="10dp">
 
     <EditText
-        android:id="@+id/etFoodType"
+        android:id="@+id/etlocName"
         android:layout_width="match_parent"
-        android:layout_height="66dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-
-        android:hint="Food Type"
+        android:hint="Location Name"
         android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/etQuantity"
+        android:id="@+id/etlocAddress"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Enter Quantity" />
+        android:hint="Address" />
 
     <EditText
-        android:id="@+id/etDescription"
+        android:id="@+id/etlocDescription"
         android:layout_width="match_parent"
-        android:layout_height="64dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Enter Description"
+        android:hint="Description"
         android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/btnLocUpdateData"
-        android:layout_width="162dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:padding="10dp"
         android:layout_marginTop="20dp"
-        android:background="@drawable/custom_button"
-        android:text="Update Data" />
+        android:background="@drawable/button"
+        android:backgroundTint="@color/new_primary"
+        android:text="Update Data"
+        android:textColor="@color/login_input" />
 
 
 </LinearLayout>
