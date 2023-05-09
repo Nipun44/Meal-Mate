@@ -27,8 +27,8 @@
         android:layout_height="135dp"
         android:layout_marginTop="20dp"
         android:ems="10"
-        android:hint="Description"
-        android:inputType="textPersonName" />
+        android:hint="Date"
+        android:inputType="date" />
 
     <EditText
         android:id="@+id/etNoticeDescription"
@@ -45,7 +45,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="20dp"
-        android:text="Update Data" />
+        android:background="@drawable/button"
+        android:text="Update Data"
+        android:textColor="@color/login_input"
+        android:textSize="18sp" />
 
 
 </LinearLayout>

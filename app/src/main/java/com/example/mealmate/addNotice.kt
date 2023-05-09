@@ -1,5 +1,6 @@
 package com.example.mealmate
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -29,12 +30,19 @@ class addNotice : AppCompatActivity() {
         notice_place = findViewById(R.id.notice_place)
         notice_date = findViewById(R.id.notice_date)
         notice_submit = findViewById(R.id.notice_submit)
+        notice_back = findViewById(R.id.notice_back)
 
         dbRef = FirebaseDatabase.getInstance().getReference("Notices")
 
         notice_submit.setOnClickListener {
             saveNotice()
         }
+
+        notice_back.setOnClickListener {
+            val intent = Intent(this, noticeDash::class.java)
+            startActivity(intent)
+        }
+
 
 
     }
@@ -65,7 +73,7 @@ class addNotice : AppCompatActivity() {
 
         dbRef.child(noticeID).setValue(notice)
             .addOnCompleteListener {
-                Toast.makeText(this, "Data inserted Successfully", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Add Successfully", Toast.LENGTH_LONG).show()
 
 
                 notice_topic.text.clear()

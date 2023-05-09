@@ -31,11 +31,18 @@
             android:exported="false"/>
 
         <activity
+            android:name=".MainDashboard"
+            android:exported="false" />
+        <activity
+            android:name=".allNoticeList"
+            android:exported="false" />
+        <activity
             android:name=".listNotices"
             android:exported="false" />
         <activity
             android:name=".FetchingFood"
             android:exported="true" />
+
         <activity
             android:name=".SingleItemView"
             android:exported="false" />
@@ -53,12 +60,11 @@
             android:exported="false" />
         <activity
             android:name=".AddLocation"
-            android:exported="false" /> <!-- <activity -->
-        <!-- android:name=".foodList" -->
-        <!-- android:exported="false" /> -->
-        <!-- <activity -->
-        <!-- android:name=".GiveFood" -->
-        <!-- android:exported="false" /> -->
+            android:exported="false"/>
+        <activity
+            android:name=".noticeDash"
+            android:exported="false">
+        </activity>
         <activity
             android:name=".TermsAndConditions"
             android:exported="false" />
@@ -79,16 +85,7 @@
             android:exported="false" />
         <activity
             android:name=".GivePartfood"
-            android:exported="false">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-
-        </activity>
+            android:exported="false"/>
         <activity
             android:name=".forgetpassword2"
             android:exported="false" />
@@ -100,15 +97,8 @@
             android:exported="false" />
         <activity
             android:name=".MealDashboard"
-            android:exported="false">
+            android:exported="false"/>
 
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-        </activity>
         <activity
             android:name=".Register"
             android:exported="false" />
@@ -123,7 +113,9 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false">
+
+        </activity>
     </application>
 
 </manifest>

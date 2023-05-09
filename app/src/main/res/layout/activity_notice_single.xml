@@ -1,6 +1,7 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     app:cardElevation="8dp"
@@ -8,7 +9,7 @@
     android:layout_margin="8dp">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="376dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
@@ -18,57 +19,51 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/tvLoadingNoticeTopic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/textview_outline"
+            android:gravity="center"
+            android:outlineProvider="background"
+            android:text="Notice"
+            android:textColor="@color/new_primary"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="339dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:orientation="horizontal">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardElevation="8dp"
-                app:cardUseCompatPadding="true"
-                app:cardCornerRadius="8dp"
-                app:cardBackgroundColor="@android:color/white">
-
-                <TextView
-                    android:id="@+id/tvLoadingNoticeTopic"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:gravity="center"
-                    android:text="Notice"
-                    android:textColor="@color/new_primary"
-                    android:textSize="30sp"
-                    android:textStyle="bold"
-                    android:background="@drawable/textview_outline"
-                    android:outlineProvider="background" />
-
-            </androidx.cardview.widget.CardView>
+            android:orientation="horizontal"
+            android:background="@color/new_primary"
+            android:layout_marginTop="16dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
-                android:layout_marginEnd="16dp">
+                android:layout_marginEnd="16dp"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/tvField1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="10dp"
                     android:text="Field 1"
-                    android:textSize="14sp"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/new_secondary"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/tvField2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:padding="10dp"
                     android:text="Field 2"
-                    android:textSize="14sp"
-                    android:textColor="@color/black" />
+                    android:textColor="@color/new_secondary"
+                    android:textSize="20sp" />
 
             </LinearLayout>
 

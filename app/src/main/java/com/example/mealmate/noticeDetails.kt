@@ -20,6 +20,7 @@ class noticeDetails : AppCompatActivity() {
 
 
     private lateinit var btnUpdate1: Button
+    private lateinit var shareEx: Button
 
     private lateinit var btnDelete: Button
 
@@ -36,36 +37,53 @@ class noticeDetails : AppCompatActivity() {
                 intent.getStringExtra("nTopic").toString()
             )
         }
+        shareEx.setOnClickListener {
+            val shareIntent = Intent(Intent.ACTION_SEND)
+            shareIntent.type = "text/plain"
+            shareIntent.putExtra(Intent.EXTRA_TEXT, "Topic: ${tvNTopic.text}\nDescription: ${tvNDes.text}\nPlace: ${tvNPlace.text}\nDate: ${tvNDate.text}")
+            startActivity(Intent.createChooser(shareIntent, "Share news via"))
+        }
+
 
         btnDelete.setOnClickListener{
-            deleteRecord(
-                intent.getStringExtra("nID").toString()
-            )
+            val builder = AlertDialog.Builder(this)
+            builder.setTitle("Confirm Delete")
+            builder.setMessage("Are you sure you want to delete this notice?")
+            builder.setPositiveButton("Delete") { dialog, _ ->
+                deleteRecord(intent.getStringExtra("nID").toString())
+                dialog.dismiss()
+            }
+            builder.setNegativeButton("Cancel") { dialog, _ ->
+                dialog.dismiss()
+            }
+            val dialog = builder.create()
+            dialog.show()
         }
+
     }
 
-    private fun deleteRecord(
-        id:String
-    ){
+    private fun deleteRecord(id: String) {
         val dbRef = FirebaseDatabase.getInstance().getReference("Notices").child(id)
         val nTask = dbRef.removeValue()
 
         nTask.addOnSuccessListener {
-            Toast.makeText(this,"Notice is Successfully Deleted", Toast.LENGTH_LONG).show()
+            Toast.makeText(this, "Success ", Toast.LENGTH_LONG).show()
+
             val intent = Intent(this, listNotices::class.java)
             finish()
             startActivity(intent)
-        }.addOnFailureListener{ error ->
-            Toast.makeText(this, "Deleting error is occurred ", Toast.LENGTH_LONG).show()
-
+        }.addOnFailureListener { error ->
+            Toast.makeText(this, "Error.Not Deleted ${error.message} ", Toast.LENGTH_LONG).show()
         }
     }
+
     private fun initView(){
 //        tvNoticeId = findViewById(R.id.tvNoticeId)
         tvNTopic = findViewById(R.id.tvNoticeTopic)
         tvNDes = findViewById(R.id.tvNoticeDescription)
         tvNPlace = findViewById(R.id.tvNoticePlace)
         tvNDate = findViewById(R.id.tvNoticeDate)
+        shareEx = findViewById(R.id.shareEx)
 
         btnUpdate1 = findViewById(R.id.btnUpdate1)
         btnDelete = findViewById(R.id.btnDelete)
