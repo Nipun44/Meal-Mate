@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="376dp"
-        android:layout_height="116dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:gravity="center"
         android:orientation="vertical"
@@ -19,38 +19,29 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <TextView
+            android:id="@+id/tvLoadingNoticeTopic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/textview_outline"
+            android:gravity="center"
+            android:outlineProvider="background"
+            android:text="Notice"
+            android:textColor="@color/new_primary"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="339dp"
-            android:layout_height="81dp"
+            android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:orientation="horizontal"
-            android:background="@color/new_primary">
-
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:cardBackgroundColor="@android:color/white"
-                app:cardCornerRadius="8dp"
-                app:cardElevation="8dp"
-                app:cardUseCompatPadding="true">
-
-                <TextView
-                    android:id="@+id/tvLoadingNoticeTopic"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:background="@drawable/textview_outline"
-                    android:gravity="center"
-                    android:outlineProvider="background"
-                    android:text="Notice"
-                    android:textColor="@color/new_primary"
-                    android:textSize="30sp"
-                    android:textStyle="bold" />
-
-            </androidx.cardview.widget.CardView>
+            android:background="@color/new_primary"
+            android:layout_marginTop="16dp">
 
             <LinearLayout
-                android:layout_width="186dp"
+                android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
@@ -58,12 +49,12 @@
 
                 <TextView
                     android:id="@+id/tvField1"
-                    android:layout_width="165dp"
-                    android:layout_height="41dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
                     android:padding="10dp"
                     android:text="Field 1"
-                    android:textColor="@color/black"
-                    android:textSize="20dp" />
+                    android:textColor="@color/new_secondary"
+                    android:textSize="20sp" />
 
                 <TextView
                     android:id="@+id/tvField2"
@@ -71,7 +62,7 @@
                     android:layout_height="wrap_content"
                     android:padding="10dp"
                     android:text="Field 2"
-                    android:textColor="@color/black"
+                    android:textColor="@color/new_secondary"
                     android:textSize="20sp" />
 
             </LinearLayout>
