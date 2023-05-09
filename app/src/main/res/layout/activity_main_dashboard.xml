@@ -8,22 +8,6 @@
 
     tools:context=".MainDashboard">
 
-    <ImageView
-        android:id="@+id/ProfileButton"
-        android:layout_width="60dp"
-        android:layout_height="86dp"
-        android:layout_marginStart="332dp"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="6dp"
-        android:layout_marginBottom="618dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.166"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/profile" />
-
     <TextView
         android:id="@+id/textView29"
         android:layout_width="wrap_content"
@@ -110,5 +94,15 @@
         app:srcCompat="@drawable/i5"
         android:elevation="4dp"
         android:background="@drawable/shadow"/>
+
+    <ImageView
+        android:id="@+id/ProfileButton"
+        android:layout_width="52dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/newprofile" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
