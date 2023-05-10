@@ -9,7 +9,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvNotice"
-        android:layout_width="412dp"
+        android:layout_width="match_parent"
         android:layout_height="623dp"
         android:layout_marginStart="1dp"
         android:layout_marginTop="1dp"
