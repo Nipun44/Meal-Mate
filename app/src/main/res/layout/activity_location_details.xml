@@ -4,21 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".noticeDetails">
+    tools:context=".LocationDetails">
 
     <Button
-        android:id="@+id/btnUpdate1"
+        android:id="@+id/btnUpdate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="124dp"
         android:background="@drawable/button"
+        android:backgroundTint="@color/new_primary"
         android:text="Update"
-        android:textColor="@color/primary_background_color"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        android:textColor="#ECECEC"
         app:layout_constraintEnd_toStartOf="@+id/btnDelete"
-        app:layout_constraintHorizontal_bias="0.451"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
@@ -26,26 +24,24 @@
         android:id="@+id/btnDelete"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="70dp"
+        android:layout_marginTop="132dp"
         android:background="@drawable/button"
-        android:backgroundTint="@color/new_secondary"
+        android:backgroundTint="@color/heading_text_color"
         android:text="Delete"
-        android:textColor="@color/primary_background_color"
-        android:textSize="16sp"
-        android:textStyle="bold"
+        android:textColor="#FFFFFF"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/btnUpdate1"
+        app:layout_constraintStart_toEndOf="@+id/btnUpdate"
         app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="406dp"
-        android:layout_height="466dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="120dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -53,7 +49,7 @@
         <LinearLayout
             android:id="@+id/id_lin"
             android:layout_width="match_parent"
-            android:layout_height="58dp"
+            android:layout_height="30dp"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginRight="10dp"
@@ -66,17 +62,16 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/white">
+                android:background="#F8F1F1">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text=""
-                    android:textAlignment="textStart"
-                    android:textColor="@color/new_primary"
-                    android:textSize="18dp" />
+                    android:text="Location id"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
 
             </LinearLayout>
 
@@ -86,17 +81,16 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvNoticeDate"
+                    android:id="@+id/tvLocId"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text=""
-                    android:textAlignment="textStart"
-                    android:textColor="@color/new_secondary"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
 
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    />
 
             </LinearLayout>
 
@@ -107,7 +101,7 @@
         <LinearLayout
             android:id="@+id/contact_lin"
             android:layout_width="match_parent"
-            android:layout_height="61dp"
+            android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:orientation="horizontal"
@@ -117,17 +111,16 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/white">
+                android:background="#F8F1F1">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Topic"
-                    android:textAlignment="textStart"
-                    android:textColor="@color/new_primary"
-                    android:textSize="18dp" />
+                    android:text="Location Name"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
 
             </LinearLayout>
 
@@ -137,16 +130,16 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvNoticeTopic"
+                    android:id="@+id/tvLocName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text=""
-                    android:textAlignment="textStart"
-                    android:textColor="@color/new_secondary"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
 
-                    android:textSize="18sp" />
+                    />
 
             </LinearLayout>
 
@@ -156,7 +149,7 @@
         <LinearLayout
 
             android:layout_width="match_parent"
-            android:layout_height="53dp"
+            android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:orientation="horizontal"
@@ -168,20 +161,19 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/white">
+                android:background="#F8F1F1">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center_horizontal|top"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:text="Address"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
 
 
-                    android:text="Place"
-                    android:textAlignment="textStart"
-                    android:textColor="@color/new_primary"
-
-
-                    android:textSize="18dp" />
+                    />
 
             </LinearLayout>
 
@@ -191,16 +183,16 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvNoticePlace"
+                    android:id="@+id/tvLocAddress"
                     android:layout_width="match_parent"
-                    android:layout_height="31dp"
+                    android:layout_height="wrap_content"
                     android:layout_gravity="center"
                     android:gravity="center"
                     android:text=""
-                    android:textAlignment="textStart"
-                    android:textColor="@color/new_secondary"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
 
-                    android:textSize="18sp" />
+                    />
 
             </LinearLayout>
 
@@ -211,7 +203,7 @@
         <LinearLayout
 
             android:layout_width="match_parent"
-            android:layout_height="199dp"
+            android:layout_height="40dp"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
             android:orientation="horizontal"
@@ -223,21 +215,20 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="0.6"
-                android:background="@color/white">
+                android:background="#F8F1F1">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="top"
+                    android:layout_gravity="center"
 
-
-                    android:gravity="center_horizontal"
+                    android:gravity="center"
                     android:text="Description"
-                    android:textAlignment="textStart"
-                    android:textColor="@color/new_primary"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
 
 
-                    android:textSize="18dp" />
+                    />
 
             </LinearLayout>
 
@@ -247,16 +238,16 @@
                 android:layout_weight="1.4">
 
                 <TextView
-                    android:id="@+id/tvNoticeDescription"
+                    android:id="@+id/tvLocDescription"
                     android:layout_width="match_parent"
-                    android:layout_height="186dp"
-                    android:layout_gravity="top"
-                    android:gravity="top"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
                     android:text=""
-                    android:textAlignment="textStart"
-                    android:textColor="@color/new_secondary"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
 
-                    android:textSize="18sp" />
+                    />
 
             </LinearLayout>
 
@@ -265,33 +256,5 @@
 
 
     </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView28"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="60dp"
-        android:text="@string/notice_single_details_topic"
-        android:textColor="@color/new_secondary"
-        android:textSize="28dp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/shareEx"
-        android:layout_width="44dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="74dp"
-
-        android:layout_marginEnd="18dp"
-        android:background="@drawable/baseline_share_24"
-        android:backgroundTint="@color/new_primary"
-        android:elevation="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

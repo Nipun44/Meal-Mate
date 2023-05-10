@@ -12,21 +12,33 @@
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
+            android:name=".LocationDashboard"
+            android:exported="false">
+
+        </activity>
+        <activity
+            android:name=".LocationDetails"
+            android:exported="false" />
+        <activity
             android:name=".fetchingSingleFood"
             android:exported="false" />
         <activity
             android:name=".FetchLocation"
+            android:exported="false"/>
+
+        <activity
+            android:name=".MainDashboard"
             android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".allNoticeList"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".listNotices"
             android:exported="false" />
         <activity
-            android:name=".MainDashboard"
-            android:exported="false" />
-
-        <activity
             android:name=".FetchingFood"
             android:exported="false" />
+
 
         <activity
             android:name=".noticeUpdateDialog"
@@ -42,10 +54,7 @@
             android:exported="false" />
         <activity
             android:name=".AddLocation"
-            android:exported="false">
-
-        </activity>
-
+            android:exported="false"/>
         <activity
             android:name=".noticeDash"
             android:exported="false">
@@ -70,10 +79,7 @@
             android:exported="false" />
         <activity
             android:name=".GivePartfood"
-            android:exported="false">
-
-
-        </activity>
+            android:exported="false"/>
         <activity
             android:name=".forgetpassword2"
             android:exported="false" />
@@ -85,16 +91,14 @@
             android:exported="false" />
         <activity
             android:name=".MealDashboard"
-            android:exported="false">
+            android:exported="false"/>
 
-        </activity>
         <activity
             android:name=".Register"
             android:exported="false" />
-
-         <activity
-         android:name=".RegisterAsIndividual"
-         android:exported="false" />
+        <activity
+            android:name=".RegisterAsIndividual"
+            android:exported="false" />
         <activity
             android:name=".Register3"
             android:exported="false" />
@@ -104,11 +108,14 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
         </activity>
     </application>
 
