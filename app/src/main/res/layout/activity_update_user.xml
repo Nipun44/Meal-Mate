@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <EditText
+        android:id="@+id/etUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:hint="Name"
+        android:background="@drawable/roundedcorner"
+        android:backgroundTint="@color/view_border_color"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
+
+    <EditText
+        android:id="@+id/etUserContactNumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:ems="10"
+        android:background="@drawable/roundedcorner"
+        android:backgroundTint="@color/view_border_color"
+        android:hint="Contact Number"
+        android:minHeight="48dp" />
+
+    <Button
+        android:id="@+id/btnUpdateData"
+        android:layout_width="261dp"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/roundedcorner"
+        android:backgroundTint="@color/new_primary"
+        android:text="Update Data"
+        android:textColor="@color/white" />
+
+
+</LinearLayout>
