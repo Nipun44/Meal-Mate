@@ -17,6 +17,9 @@ class MealDashboard : AppCompatActivity() {
     private lateinit var btnUserProfile: Button
     private lateinit var myList:Button
 
+
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_meal_dashboard)
@@ -29,7 +32,7 @@ class MealDashboard : AppCompatActivity() {
 
 
         iHaveExtraBtn.setOnClickListener {
-            val intent = Intent(this, GivePartfood::class.java)
+            val intent = Intent(this,LocationDashboard::class.java)
             startActivity(intent)
         }
 

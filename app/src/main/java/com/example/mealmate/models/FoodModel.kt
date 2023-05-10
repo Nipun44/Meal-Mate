@@ -5,8 +5,6 @@ class FoodModel (
     var typeFood: String? = null,
     var quantityFood: String? = null,
     var descriptionFood: String? = null,
-//    var uid: String? = null,
-    var email: String ? = null,
-
+    var email: String? = null
 
 )

@@ -22,7 +22,7 @@ class Register : AppCompatActivity() {
         }
 
         orgReg.setOnClickListener {
-            val intent = Intent(this,Register3::class.java)
+            val intent = Intent(this,RegisterAsOrganization::class.java)
             startActivity(intent)
         }
     }

@@ -54,6 +54,14 @@ private lateinit var profileButton : ImageView
             startActivity(intent)
         }
 
+
+        myListBtn.setOnClickListener {
+            val intent = Intent(this, fetchingSingleFood::class.java)
+            startActivity(intent)
+        }
+
+
+
     }
 
 
