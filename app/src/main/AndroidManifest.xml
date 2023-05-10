@@ -29,17 +29,18 @@
         <activity
             android:name=".MainDashboard"
             android:exported="false" />
-<!--        <activity-->
-<!--            android:name=".allNoticeList"-->
-<!--            android:exported="false" />-->
+        <activity
+            android:name=".allNoticeList"
+            android:exported="false" />
         <activity
             android:name=".listNotices"
             android:exported="false" />
         <activity
             android:name=".FetchingFood"
             android:exported="false" />
-
-
+        <activity
+            android:name=".SingleItemView"
+            android:exported="false" />
         <activity
             android:name=".noticeUpdateDialog"
             android:exported="false" />
@@ -108,14 +109,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
     </application>
 
