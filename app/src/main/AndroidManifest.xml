@@ -6,14 +6,17 @@
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_launcher_round"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/Theme.MealMate"
         tools:targetApi="31">
         <activity
+            android:name=".noticeSearch"
+            android:exported="false" />
+        <activity
             android:name=".LocationDashboard"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".fetchingSingleFood"
             android:exported="false" />
@@ -33,15 +36,8 @@
             android:name=".listNotices"
             android:exported="false" />
         <activity
-            android:name=".MainDashboard"
-            android:exported="false" />
-
-        <activity
             android:name=".FetchingFood"
             android:exported="false" />
-        <activity
-            android:name=".FetchingFood"
-            android:exported="true" />
         <activity
             android:name=".SingleItemView"
             android:exported="false" />
@@ -59,14 +55,10 @@
             android:exported="false" />
         <activity
             android:name=".AddLocation"
-            android:exported="false"/>
-
-
-
+            android:exported="false" />
         <activity
             android:name=".noticeDash"
-            android:exported="false">
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".TermsAndConditions"
             android:exported="false" />
@@ -89,8 +81,8 @@
             android:name=".GivePartfood"
             android:exported="false">
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
 
         </activity>
         <activity
@@ -105,19 +97,20 @@
         <activity
             android:name=".MealDashboard"
             android:exported="false">
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN" />-->
 
-<!--                <category android:name="android.intent.category.LAUNCHER" />-->
-<!--            </intent-filter>-->
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
         </activity>
         <activity
             android:name=".Register"
             android:exported="false" />
-
-         <activity
-         android:name=".RegisterAsIndividual"
-         android:exported="false" />
+        <activity
+            android:name=".RegisterAsIndividual"
+            android:exported="false" />
         <activity
             android:name=".Register3"
             android:exported="false" />
@@ -127,11 +120,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 
