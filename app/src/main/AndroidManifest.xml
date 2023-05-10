@@ -42,8 +42,7 @@
             android:exported="false" />
         <activity
             android:name=".FetchingFood"
-            android:exported="true" />
-
+            android:exported="false" />
         <activity
             android:name=".SingleItemView"
             android:exported="false" />
@@ -61,7 +60,7 @@
             android:exported="false" />
         <activity
             android:name=".AddLocation"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".noticeDash"
             android:exported="false">
@@ -114,8 +113,12 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false">
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
     </application>
 

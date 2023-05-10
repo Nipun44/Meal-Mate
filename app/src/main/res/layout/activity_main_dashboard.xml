@@ -53,62 +53,74 @@
         android:id="@+id/MealButton"
         android:layout_width="151dp"
         android:layout_height="133dp"
-        android:layout_marginStart="24dp"
+        android:layout_marginStart="16dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/shadow"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/ShareButton"
         app:layout_constraintTop_toBottomOf="@+id/imageView18"
-        app:srcCompat="@drawable/i2"
-        android:elevation="4dp"
-        android:background="@drawable/shadow"/>
+        app:srcCompat="@drawable/i2" />
 
     <ImageView
         android:id="@+id/ShareButton"
         android:layout_width="151dp"
         android:layout_height="133dp"
-        android:layout_marginStart="47dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="24dp"
-        android:layout_marginEnd="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/shadow"
+        android:elevation="4dp"
         app:layout_constraintEnd_toStartOf="@+id/MealButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView18"
-        app:srcCompat="@drawable/i3"
-        android:elevation="4dp"
-        android:background="@drawable/shadow" />
+        app:srcCompat="@drawable/i3" />
 
-
-    <ImageView
-        android:id="@+id/LocationButton"
-        android:layout_width="121dp"
-        android:layout_height="104dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginEnd="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/MealButton"
-        app:srcCompat="@drawable/i1"
-        android:elevation="4dp"
-        android:background="@drawable/shadow"/>
 
     <ImageView
         android:id="@+id/MyListButton"
-        android:layout_width="121dp"
+        android:layout_width="110dp"
         android:layout_height="104dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shadow"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/LocationButton"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/NoticeButton"
         app:layout_constraintTop_toBottomOf="@+id/MealButton"
-        app:srcCompat="@drawable/i4"
+        app:layout_constraintVertical_bias="0.241"
+        app:srcCompat="@drawable/i4" />
+
+    <ImageView
+        android:id="@+id/LocationButton"
+        android:layout_width="110dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/shadow"
         android:elevation="4dp"
-        android:background="@drawable/shadow"/>
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MealButton"
+        app:layout_constraintVertical_bias="0.235"
+        app:srcCompat="@drawable/i1" />
 
     <ImageView
         android:id="@+id/NoticeButton"
-        android:layout_width="121dp"
+        android:layout_width="110dp"
         android:layout_height="104dp"
         android:layout_marginStart="20dp"
         android:layout_marginTop="30dp"
+        android:background="@drawable/shadow"
+        android:elevation="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ShareButton"
-        app:srcCompat="@drawable/i5"
-        android:elevation="4dp"
-        android:background="@drawable/shadow"/>
+        app:layout_constraintVertical_bias="0.235"
+        app:srcCompat="@drawable/i5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
