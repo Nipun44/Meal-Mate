@@ -1,6 +1,5 @@
 package com.example.mealmate
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -101,7 +100,7 @@ class FoodDetails : AppCompatActivity() {
         val etFoodType =  mDialogView.findViewById<EditText>(R.id.etFoodType)
         val etQuantity = mDialogView.findViewById<EditText>(R.id.etQuantity)
         val etDescription = mDialogView.findViewById<EditText>(R.id.etDescription)
-        val btnUpdateData = mDialogView.findViewById<Button>(R.id.btnUpdateData)
+        val btnUpdateData = mDialogView.findViewById<Button>(R.id.btnLocUpdateData)
 
         etFoodType.setText(intent.getStringExtra("foodType").toString())
         etQuantity.setText(intent.getStringExtra("foodQuantity").toString())
