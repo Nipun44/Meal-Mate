@@ -45,7 +45,7 @@ private lateinit var profileButton : ImageView
         }
 
         locationBtn.setOnClickListener {
-            val intent = Intent(this, GivePartfood::class.java)
+            val intent = Intent(this, LocationDashboard::class.java)
             startActivity(intent)
         }
 
@@ -53,6 +53,14 @@ private lateinit var profileButton : ImageView
             val intent = Intent(this, Profile::class.java)
             startActivity(intent)
         }
+
+
+        myListBtn.setOnClickListener {
+            val intent = Intent(this, fetchingSingleFood::class.java)
+            startActivity(intent)
+        }
+
+
 
     }
 

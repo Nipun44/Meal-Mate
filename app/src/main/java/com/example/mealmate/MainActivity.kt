@@ -1,5 +1,7 @@
 package com.example.mealmate
 
+
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -34,12 +36,18 @@ class MainActivity : AppCompatActivity() {
         }
 
         btnLogin.setOnClickListener {
+
+            val sharedPref = applicationContext.getSharedPreferences("MyPrefs", Context.MODE_PRIVATE)
             if (checking()) {
                 val email = email.text.toString()
                 val password = password.text.toString()
                 auth.signInWithEmailAndPassword(email, password)
                     .addOnCompleteListener(this) { task ->
                         if (task.isSuccessful) {
+                            val editor = sharedPref.edit()
+                            editor.putString("email", email)
+                            editor.apply()
+
                             Toast.makeText(this, "Login Successful", Toast.LENGTH_LONG).show()
                             val intent = Intent(this, MainDashboard::class.java)
                            intent.putExtra("email",email)
