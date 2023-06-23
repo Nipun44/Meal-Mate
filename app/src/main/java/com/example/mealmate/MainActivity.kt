@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
         btnLogin = findViewById(R.id.login_screen_btn)
         email = findViewById(R.id.username)
         password = findViewById(R.id.password)
-
+        //get firebase instance
         auth = FirebaseAuth.getInstance()
 
         notAccount.setOnClickListener {

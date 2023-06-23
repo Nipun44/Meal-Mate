@@ -62,7 +62,7 @@
         android:id="@+id/not_have_account_text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="112dp"
         android:padding="10dp"
         android:text="@string/signup_dont_haveacc"
         android:textColor="@color/black"
